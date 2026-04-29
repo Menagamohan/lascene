@@ -14,11 +14,11 @@
 
     <!-- HEADER -->
     <header class="header">
-        <div class="logo"><img src="assets/images/logo.webp" alt="" style="width: 130px; height: 70px;"></div>
+        <div class="logo1"><img src="assets/images/logo.webp" alt="" style="width: 130px; height: 70px;"></div>
         <nav class="nav">
             <a href="index.html">Accueil</a>
             <a href="show.html">Spectacles</a>
-            <a href="theatre.html">Le théâtre</a>
+            <a href="theatre.html" class="active">Le théâtre</a>
             <a href="Training.html">Formations</a>
             <a href="Gallery.html">Galerie</a>
             <a href="Access.html">Accès</a>
@@ -28,114 +28,181 @@
 
     <!-- 🔴 TOP IMAGE -->
     <div class="top-banner-img">
-        <img src="assets/images/background.avif" alt="Theatre Banner">
+        <img src="assets/images/background 2.png" alt="Theatre Banner" style="width: 1690px; height: 320px;">
     </div>
 
     <!-- 🔴 CONTENT SECTION -->
-    <div class="theatre-section">
+    <div class="theatre-container">
 
-        <h1 class="main-title">Le théâtre</h1>
-
-        <div class="content">
-            <!-- LEFT TEXT -->
-            <div class="text">
+        <!-- SECTION 1: Text Left, Image Right -->
+        <div class="theatre-row">
+            <div class="theatre-text">
                 <h2>LA SCENE PARISIENNE</h2>
                 <p>
                     Deux salles, flambant neuves, au 34 rue Richer, accolées aux Folies Bergère au cœur du 9ème
                     arrondissement et à deux pas des Grands Boulevards où bouillonnent l’esprit de comédie et l’énergie
-                    du divertissement, dans le confort de leurs fauteuils rouges
-                    de plaisir, d’où l’on voit bien de partout, et tout ce qui se passe sur leurs larges scènes.
+                    du divertissement, dans le confort de leurs fauteuils rouges de plaisir, d’où l’on voit bien de
+                    partout, et tout ce qui se passe sur leurs larges scènes, comme si l'on avait descendu le Paradis
+                    (autrefois dernier balcon des théâtres où l'on entassait les plus démunis) à hauteur d'orchestre
+                    pour
+                    partager des fêtes terrestres.
                 </p>
-
-                <button>CONTACTER LE THÉÂTRE</button>
+                <a href="Contact.html" class="theatre-btn">CONTACTER LE THÉÂTRE</a>
             </div>
-
-            <!-- RIGHT IMAGE -->
-            <div class="image">
-                <img src="assets/images/g1.webp" alt="Theatre Hall">
+            <div class="theatre-image">
+                <img src="assets/images/g1.webp" alt="La Scène Parisienne">
             </div>
         </div>
-    </div>
 
-    <style>
-        .top-banner-img img {
-            width: 100%;
-            height: 500px;
-            object-fit: cover;
-        }
-
-        @media (max-width: 1024px) {
-            .theatre-section {
-                padding: 40px 20px;
-            }
-
-            .content {
-                flex-direction: column !important;
-                text-align: center;
-            }
-
-            .text,
-            .image {
-                max-width: 100%;
-            }
-
-            .main-title {
-                font-size: 36px;
-            }
-
-            .top-banner-img img {
-                height: 300px;
-            }
-        }
-    </style>
-
-    <div class="container4">
-
-        <!-- TOP SECTION -->
-        <div class="topsetion3">
-
-            <div class="imageboxs">
-                <img src="assets/images/seat 2.webp" alt="Theatre">
-                <br>
-                <a href="#" class="btn4">CONTACTER LE THÉÂTRE</a>
+        <!-- SECTION 2: Image Left, Text Right -->
+        <div class="theatre-row reverse">
+            <div class="theatre-image">
+                <img src="assets/images/seat 2.webp" alt="La Programmation">
             </div>
-
-            <div class="textbox4">
-                <h1>LA PROGRAMMATION</h1>
+            <div class="theatre-text">
+                <h2>LA PROGRAMMATION</h2>
                 <p>
                     Qu’on aime rire aux éclats ou s’émouvoir jusqu’aux larmes, que l’on penche pour le drame ou la
-                    comédie...
+                    comédie, la gravité ou la légèreté, le sérieux ou la gaudriole, nous sommes tous acteurs de La Scène
+                    Parisienne.
                 </p>
-
                 <p>
-                    C’est dans cet esprit de liberté totale que s’épanouira la programmation...
-                </p>
-
-                <p>
-                    Faire de l’éclectisme artistique notre religion, tel est notre credo...
+                    C’est dans cet esprit de liberté totale que s’épanouira la programmation de La Scène Parisienne :
+                    tout oser et ne rien s’interdire. Ici, point de frontières artistiques, mais une ouverture totale à
+                    l’excellence et au talent sous toutes ses formes.
                 </p>
             </div>
-
         </div>
 
-        <!-- BOTTOM SECTION -->
-        <div class="bottomsecion2">
-
-            <div class="subscribe4">
+        <!-- QR SECTION -->
+        <div class="qr-section">
+            <div class="qr-text">
                 <h2>S'abonner</h2>
                 <p>
                     Nouveautés, interviews, premières, offres exclusives... Découvrez encore plus en scannant ce QR code
                     ➡️
                 </p>
             </div>
-
-            <div class="qrimg2">
+            <div class="qr-image">
                 <img src="assets/images/qr-code.png" alt="QR Code">
             </div>
-
         </div>
 
     </div>
+
+    <style>
+        .theatre-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px;
+            color: #fff;
+        }
+
+        .theatre-row {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            margin-bottom: 100px;
+        }
+
+        .theatre-row.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .theatre-text {
+            flex: 1;
+        }
+
+        .theatre-text h2 {
+            font-size: 32px;
+            margin-bottom: 25px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .theatre-text p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        .theatre-image {
+            flex: 1;
+        }
+
+        .theatre-image img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 4px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .theatre-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #fff;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+            margin-top: 20px;
+            transition: 0.3s;
+            font-size: 14px;
+        }
+
+        .theatre-btn:hover {
+            background: #e63946;
+            color: #fff;
+        }
+
+        .qr-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 100px;
+            padding-top: 60px;
+            border-top: 1px solid #333;
+        }
+
+        .qr-text h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .qr-text p {
+            color: #ccc;
+            max-width: 500px;
+        }
+
+        .qr-image img {
+            width: 150px;
+            background: #fff;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 900px) {
+
+            .theatre-row,
+            .theatre-row.reverse {
+                flex-direction: column;
+                gap: 40px;
+                text-align: center;
+            }
+
+            .theatre-image img {
+                height: 300px;
+            }
+
+            .qr-section {
+                flex-direction: column;
+                gap: 30px;
+                text-align: center;
+            }
+        }
+    </style>
 
     <!-- footer -->
     <div class="footer-top">
