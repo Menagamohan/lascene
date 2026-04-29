@@ -754,3 +754,33 @@
         width: 100% !important;
     }
 }
+/* FLATPICKR CUSTOM VISIBILITY FIX */
+.flatpickr-calendar {
+    background: #fff !important;
+    color: #000 !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5) !important;
+}
+.flatpickr-calendar * {
+    background-color: transparent !important;
+}
+.flatpickr-day {
+    color: #333 !important;
+}
+.flatpickr-day.selected, .flatpickr-day.startRange, .flatpickr-day.endRange {
+    background: #e63946 !important;
+    border-color: #e63946 !important;
+    color: #fff !important;
+}
+.flatpickr-day:hover {
+    background: #eee !important;
+}
+.flatpickr-months .flatpickr-month, 
+.flatpickr-months .flatpickr-prev-month, 
+.flatpickr-months .flatpickr-next-month {
+    color: #000 !important;
+    fill: #000 !important;
+}
+.flatpickr-weekday {
+    color: #666 !important;
+}
+
