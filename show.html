@@ -145,45 +145,142 @@
         }
 
         /* FILTER SECTION */
-        .filter-section { max-width: 800px; margin: 0 auto 50px; text-align: center; }
-        .filter-tabs { display: flex; justify-content: center; gap: 15px; margin-bottom: 30px; }
+        .filter-section {
+            max-width: 800px;
+            margin: 0 auto 50px;
+            text-align: center;
+        }
+
+        .filter-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
         .filter-tabs button {
-            padding: 12px 35px; border: 1px solid #555; background: transparent;
-            color: #fff; font-size: 15px; cursor: pointer; transition: all 0.3s; border-radius: 4px;
+            padding: 12px 35px;
+            border: 1px solid #555;
+            background: transparent;
+            color: #fff;
+            font-size: 15px;
+            cursor: pointer;
+            transition: all 0.3s;
+            border-radius: 4px;
         }
-        .filter-tabs button:hover { border-color: #fff; }
-        .filter-tabs button.active { background: #fff; color: #000; border-color: #fff; font-weight: bold; }
-        .filter-row { display: flex; justify-content: center; gap: 20px; margin-bottom: 25px; flex-wrap: wrap; }
-        .filter-row input, .filter-row select {
-            padding: 12px 18px; background: transparent; border: 1px solid #555;
-            color: #fff; font-size: 14px; min-width: 220px; outline: none; border-radius: 4px;
+
+        .filter-tabs button:hover {
+            border-color: #fff;
         }
-        .filter-row input::placeholder { color: #888; }
-        .filter-row select option { background: #111; color: #fff; }
+
+        .filter-tabs button.active {
+            background: #fff;
+            color: #000;
+            border-color: #fff;
+            font-weight: bold;
+        }
+
+        .filter-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .filter-row input,
+        .filter-row select {
+            padding: 12px 18px;
+            background: transparent;
+            border: 1px solid #555;
+            color: #fff;
+            font-size: 14px;
+            min-width: 220px;
+            outline: none;
+            border-radius: 4px;
+        }
+
+        .filter-row input::placeholder {
+            color: #888;
+        }
+
+        .filter-row select option {
+            background: #111;
+            color: #fff;
+        }
+
         .btn-filtrer {
-            padding: 12px 40px; background: #fff; color: #000; border: 2px solid #fff;
-            border-radius: 25px; font-size: 15px; font-weight: bold; cursor: pointer;
-            transition: all 0.3s; letter-spacing: 1px;
+            padding: 12px 40px;
+            background: #fff;
+            color: #000;
+            border: 2px solid #fff;
+            border-radius: 25px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            letter-spacing: 1px;
         }
-        .btn-filtrer:hover { background: transparent; color: #fff; }
+
+        .btn-filtrer:hover {
+            background: transparent;
+            color: #fff;
+        }
+
         .btn-show-all {
-            padding: 12px 40px; background: transparent; color: #fff; border: 1px solid #555;
-            border-radius: 25px; font-size: 14px; cursor: pointer; transition: all 0.3s; margin-left: 15px;
+            padding: 12px 40px;
+            background: transparent;
+            color: #fff;
+            border: 1px solid #555;
+            border-radius: 25px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-left: 15px;
         }
-        .btn-show-all:hover { border-color: #fff; }
-        .no-results { text-align: center; color: #888; font-size: 18px; padding: 60px 0; background: transparent; }
+
+        .btn-show-all:hover {
+            border-color: #fff;
+        }
+
+        .no-results {
+            text-align: center;
+            color: #888;
+            font-size: 18px;
+            padding: 60px 0;
+            background: transparent;
+        }
 
         @media (max-width: 1024px) {
-            .shows-grid { grid-template-columns: repeat(3, 1fr); }
+            .shows-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
         }
+
         @media (max-width: 768px) {
-            .shows-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
-            .show-card .card-img { height: 280px; }
-            .filter-tabs { flex-wrap: wrap; }
-            .filter-row { flex-direction: column; align-items: center; }
+            .shows-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .show-card .card-img {
+                height: 280px;
+            }
+
+            .filter-tabs {
+                flex-wrap: wrap;
+            }
+
+            .filter-row {
+                flex-direction: column;
+                align-items: center;
+            }
         }
+
         @media (max-width: 480px) {
-            .shows-grid { grid-template-columns: 1fr; }
+            .shows-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -194,12 +291,12 @@
     <header class="header">
         <div class="logo"><img src="assets/images/logo.webp" alt="" style="width: 130px; height: 70px;"></div>
         <nav class="nav">
-            <a href="index.html">Welcome</a>
-            <a href="show.html">Shows</a>
-            <a href="theatre.html">The theatre</a>
-            <a href="Training.html">Training</a>
-            <a href="Gallery.html">Gallery</a>
-            <a href="Access.html">Access</a>
+            <a href="index.html">Accueil</a>
+            <a href="show.html">Spectacles</a>
+            <a href="theatre.html">Le théâtre</a>
+            <a href="Training.html">Formations</a>
+            <a href="Gallery.html">Galerie</a>
+            <a href="Access.html">Accès</a>
             <a href="Contact.html">Contact</a>
         </nav>
     </header>
@@ -250,7 +347,8 @@
         <div class="line3"></div>
         <div class="footer-row">
             <div class="footer-col">
-                <div class="logo"><img src="assets/images/logo.webp" alt="image" style="width: 160px; height: 100px;"></div>
+                <div class="logo"><img src="assets/images/logo.webp" alt="image" style="width: 160px; height: 100px;">
+                </div>
                 <p>La Scene Parisienne &copy;Tous droits réservés</p>
                 <p>Mentions légales</p>
                 <p>Site réalisé par MSV et design par Divine Agency</p>
@@ -285,19 +383,23 @@
         let activeTab = 'affiche';
         let filteredShows = [];
 
-        const monthMap = {'Jan':0,'Fév':1,'Fev':1,'Mar':2,'Avr':3,'Mai':4,'Juin':5,'Juil':6,'Août':7,'Sep':8,'Oct':9,'Nov':10,'Déc':11,'Dec':11};
+        const monthMap = { 'Jan': 0, 'Fév': 1, 'Fev': 1, 'Mar': 2, 'Avr': 3, 'Mai': 4, 'Juin': 5, 'Juil': 6, 'Août': 7, 'Sep': 8, 'Oct': 9, 'Nov': 10, 'Déc': 11, 'Dec': 11 };
         function parseFD(s) {
             const p = s.trim().split(/\s+/);
             if (p.length < 3) return null;
-            const d=parseInt(p[0]), m=monthMap[p[1]], y=parseInt(p[2]);
-            return (isNaN(d)||m===undefined||isNaN(y)) ? null : new Date(y,m,d);
+            const d = parseInt(p[0]), m = monthMap[p[1]], y = parseInt(p[2]);
+            return (isNaN(d) || m === undefined || isNaN(y)) ? null : new Date(y, m, d);
         }
         function getRange(show) {
-            const parts = show.date.split(' - ');
-            return { start: parseFD(parts[0]), end: parts[1] ? parseFD(parts[1]) : parseFD(parts[0]) };
+            const parts = show.date.split(/\s+-\s+/);
+            const startStr = parts[0];
+            const endStr = parts[1] || parts[0];
+            const start = parseFD(startStr);
+            const end = parseFD(endStr);
+            return { start, end };
         }
 
-        const today = new Date(); today.setHours(0,0,0,0);
+        const today = new Date(); today.setHours(0, 0, 0, 0);
 
         const allShows = [
             { title: "Sakura Swan", date: "12 Juin 2026 - 12 Juin 2026", image: "assets/images/show 1.png", desc: "Un voyage vers le paradis. Sakura Swan est une histoire bouleversante d'amour, de perte et de transformation.", type: "Spectacle Musical" },
@@ -346,6 +448,8 @@
         ];
 
 
+        let fpInstance;
+
         function getFilteredByTab() {
             return allShows.filter(s => {
                 const r = getRange(s);
@@ -360,33 +464,46 @@
         function setTab(tab) {
             activeTab = tab;
             document.querySelectorAll('.filter-tabs button').forEach((b, i) => {
-                b.classList.toggle('active', (i===0 && tab==='affiche') || (i===1 && tab==='prochainement') || (i===2 && tab==='archive'));
+                b.classList.toggle('active', (i === 0 && tab === 'affiche') || (i === 1 && tab === 'prochainement') || (i === 2 && tab === 'archive'));
             });
-            const fp = document.getElementById('dateRange')._flatpickr;
-            if (fp) fp.clear();
+            if (fpInstance) fpInstance.clear();
             document.getElementById('typeFilter').value = '';
             filteredShows = getFilteredByTab();
             renderPage(1);
         }
 
         function applyFilter() {
-            const fp = document.getElementById('dateRange')._flatpickr;
-            const dates = fp ? fp.selectedDates : [];
-            const from = dates[0] || null;
-            const to = dates[1] || dates[0] || null;
+            const dates = fpInstance ? fpInstance.selectedDates : [];
+            let from = null;
+            let to = null;
+
+            if (dates.length > 0) {
+                from = new Date(dates[0]);
+                from.setHours(0, 0, 0, 0);
+                if (dates.length > 1) {
+                    to = new Date(dates[1]);
+                } else {
+                    to = new Date(dates[0]);
+                }
+                to.setHours(0, 0, 0, 0);
+            }
             const type = document.getElementById('typeFilter').value;
 
-            // If a date is selected, search globally across all shows
-            // If no date is selected, filter within the current active tab
+            // If a date is selected, we search globally, otherwise we use the active tab
             let base = (from || to) ? [...allShows] : getFilteredByTab();
 
             if (from || to) {
                 base = base.filter(s => {
                     const r = getRange(s);
-                    if (!r.start || !r.end) return false;
-                    // Check if show performance range overlaps with selected filter range
-                    const showOverlap = (from && r.end < from) || (to && r.start > to);
-                    return !showOverlap;
+                    if (!r.start) return false;
+
+                    // Normalize show start date to midnight for comparison
+                    const showStart = new Date(r.start);
+                    showStart.setHours(0, 0, 0, 0);
+
+                    // Strict range check: Show must START within the selected filter range
+                    // This addresses the user's concern about shows from other months (like Oct) appearing
+                    return (showStart >= from && showStart <= to);
                 });
             }
 
@@ -400,9 +517,8 @@
 
         function showAll() {
             activeTab = 'affiche';
-            document.querySelectorAll('.filter-tabs button').forEach((b, i) => b.classList.toggle('active', i===0));
-            const fp = document.getElementById('dateRange')._flatpickr;
-            if (fp) fp.clear();
+            document.querySelectorAll('.filter-tabs button').forEach((b, i) => b.classList.toggle('active', i === 0));
+            if (fpInstance) fpInstance.clear();
             document.getElementById('typeFilter').value = '';
             filteredShows = [...allShows];
             renderPage(1);
@@ -470,8 +586,8 @@
         }
 
         // Init flatpickr - range mode to select two dates in one input
-        flatpickr('#dateRange', { 
-            mode: 'range', 
+        fpInstance = flatpickr('#dateRange', {
+            mode: 'range',
             dateFormat: 'd M Y',
             locale: {
                 rangeSeparator: ' au '

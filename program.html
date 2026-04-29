@@ -16,38 +16,38 @@
             color: #fff;
             font-family: Arial;
         }
-        
+
         .container {
             display: flex;
             height: 100vh;
         }
-        
+
         .left {
             width: 40%;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        
+
         .left img {
             width: 70%;
             border-radius: 10px;
         }
-        
+
         .right {
             width: 60%;
             padding: 50px;
         }
-        
+
         .title {
             font-size: 40px;
             margin-bottom: 20px;
         }
-        
+
         .details p {
             margin: 5px 0;
         }
-        
+
         .btn {
             padding: 10px 20px;
             border-radius: 20px;
@@ -56,8 +56,9 @@
             color: black;
             cursor: pointer;
         }
+
         /* arrows */
-        
+
         .arrow {
             position: absolute;
             top: 50%;
@@ -67,11 +68,11 @@
             padding: 10px;
             background: rgba(255, 255, 255, 0.2);
         }
-        
+
         .left-arrow {
             left: 10px;
         }
-        
+
         .right-arrow {
             right: 10px;
         }
@@ -84,19 +85,25 @@
                 height: auto;
                 min-height: 100vh;
             }
-            .left, .right {
+
+            .left,
+            .right {
                 width: 100%;
             }
+
             .left {
                 padding-top: 40px;
             }
+
             .left img {
                 width: 50%;
             }
+
             .right {
                 padding: 30px;
                 text-align: center;
             }
+
             .details {
                 display: flex;
                 flex-wrap: wrap;
@@ -109,9 +116,11 @@
             .left img {
                 width: 80%;
             }
+
             .title {
                 font-size: 28px;
             }
+
             .details {
                 flex-direction: column;
                 align-items: center;
@@ -125,14 +134,13 @@
     <!-- HEADER -->
     <header class="header">
         <div class="logo"><img src="assets/images/logo.webp" alt="" style="width: 130px; height: 70px;"></div>
-
         <nav class="nav">
-            <a href="index.html">Welcome</a>
-            <a href="show.html">Shows</a>
-            <a href="theatre.html">The theatre</a>
-            <a href="Training.html">Training</a>
-            <a href="Gallery.html">Gallery</a>
-            <a href="Access.html">Access</a>
+            <a href="index.html">Accueil</a>
+            <a href="show.html">Spectacles</a>
+            <a href="theatre.html">Le théâtre</a>
+            <a href="Training.html">Formations</a>
+            <a href="Gallery.html">Galerie</a>
+            <a href="Access.html">Accès</a>
             <a href="Contact.html">Contact</a>
         </nav>
     </header>
@@ -178,11 +186,16 @@
             <div class="booking-details">
                 <h1 id="bookingTitle"></h1>
                 <div class="booking-info">
-                    <div class="booking-info-row"><span class="label">Dates</span><span class="value" id="bookingDates"></span></div>
-                    <div class="booking-info-row"><span class="label">Horaires</span><span class="value" id="bookingHoraires"></span></div>
-                    <div class="booking-info-row"><span class="label">Salle</span><span class="value" id="bookingSalle"></span></div>
-                    <div class="booking-info-row"><span class="label">Tarif</span><span class="value" id="bookingTarif"></span></div>
-                    <div class="booking-info-row"><span class="label">Durée</span><span class="value" id="bookingDuree"></span></div>
+                    <div class="booking-info-row"><span class="label">Dates</span><span class="value"
+                            id="bookingDates"></span></div>
+                    <div class="booking-info-row"><span class="label">Horaires</span><span class="value"
+                            id="bookingHoraires"></span></div>
+                    <div class="booking-info-row"><span class="label">Salle</span><span class="value"
+                            id="bookingSalle"></span></div>
+                    <div class="booking-info-row"><span class="label">Tarif</span><span class="value"
+                            id="bookingTarif"></span></div>
+                    <div class="booking-info-row"><span class="label">Durée</span><span class="value"
+                            id="bookingDuree"></span></div>
                 </div>
                 <div class="booking-desc" id="bookingDesc"></div>
                 <button class="btn-reserver" onclick="showCalendarStep()">RÉSERVER</button>
@@ -221,15 +234,15 @@
     <script>
         /* ✅ ONLY 3 SLIDES (YOU CAN ADD UP TO 41) */
         const programs = [{
-                title: "Sakura Swan",
+            title: "Sakura Swan",
 
-                image: "assets/images/show 1.png",
-                Dates: "12 Juin 2026- 12 Juin 2026",
-                Horaires: "Vendredi 20:15",
-                Salle: "1",
-                Tarif: "18 euros",
-                Durée: "45 min",
-                desc: `Un voyage vers le paradis.<br><br>
+            image: "assets/images/show 1.png",
+            Dates: "12 Juin 2026- 12 Juin 2026",
+            Horaires: "Vendredi 20:15",
+            Salle: "1",
+            Tarif: "18 euros",
+            Durée: "45 min",
+            desc: `Un voyage vers le paradis.<br><br>
 Sakura Swan est une histoire bouleversante d’amour, de perte et de transformation. Elle suit Sakura, un cygne attiré par le renouveau. En quête d’espoir et d’un nouveau départ, elle laisse son passé derrière elle et entame un voyage qui changera sa vie. Elle y rencontre un homme au grand cœur, avec qui elle construit une existence remplie d’amour, d’espoir et de la promesse d’une famille.<br>
 Mais leur bonheur est brisé lorsque la guerre l’appelle loin d’elle, et il ne revient jamais.<br><br>
 Livrée à elle-même, Sakura traverse des années de souffrance et de sacrifice, s’accrochant aux souvenirs de la vie qu’ils rêvaient de partager. Lorsque le poids de son chagrin devient insupportable, elle fait un choix déchirant qui bouleverse tout.<br>
@@ -251,15 +264,15 @@ Adonis Deladrier<br><br>
 Tiphanie Moulin<br><br>
 Rio Nishida<br><br>
 Bobby Roy`
-            }, {
-                title: "PFIOU PFIOU",
-                image: "assets/images/show 2.jpg",
-                Dates: "20 Fév 2026- 31 Mai 2026",
-                Horaires: "Jeudi 21:15 Jeudi 19:30 Vendredi 21:15 Vendredi 19:30 Samedi 19:30 Samedi 21:15 Dimanche 15:30",
-                Tarif: "35€",
-                Salle: "1",
-                Durée: "1H30",
-                desc: `Pfiou Pfiou est une comédie parodique totalement absurde et irrévérencieuse.<br><br>
+        }, {
+            title: "PFIOU PFIOU",
+            image: "assets/images/show 2.jpg",
+            Dates: "20 Fév 2026- 31 Mai 2026",
+            Horaires: "Jeudi 21:15 Jeudi 19:30 Vendredi 21:15 Vendredi 19:30 Samedi 19:30 Samedi 21:15 Dimanche 15:30",
+            Tarif: "35€",
+            Salle: "1",
+            Durée: "1H30",
+            desc: `Pfiou Pfiou est une comédie parodique totalement absurde et irrévérencieuse.<br><br>
 On y massacre joyeusement le théâtre, les sitcoms et le bon goût dans un rythme effréné.<br><br>
 Pour hériter de sa mère, il faut se marier… ou suivre le plan foireux du meilleur pote.<br><br>
 Notaire suspicieuse, mafia qui s’incruste, mensonges en cascade : tout dégénère joyeusement.<br><br>
@@ -272,15 +285,15 @@ Extraits presse<br><br>
 « Une bulle d’énergie » L’INTERNAUTE<br><br>
 « Un concentré d’humour » RADIO SCOOP<br><br>
 « OVNI théâtrale » LYON ECO ET CULTURE`
-            }, {
-                title: "Il est toujours temps, le musical",
-                image: "assets/images/show 3.png",
-                Dates: "02 Juin 2026- 17 Juin 2026",
-                Horaires: "Lundi 19:00 Mardi 19:00 Mercredi 19:00",
-                Salle: "1",
-                Tarif: "À partir de 27 euros",
-                Durée: "75 min",
-                desc: `Et si votre vie ne faisait que commencer ? Un spectacle musical émouvant sur le courage de se réinventer à tout âge.<br>
+        }, {
+            title: "Il est toujours temps, le musical",
+            image: "assets/images/show 3.png",
+            Dates: "02 Juin 2026- 17 Juin 2026",
+            Horaires: "Lundi 19:00 Mardi 19:00 Mercredi 19:00",
+            Salle: "1",
+            Tarif: "À partir de 27 euros",
+            Durée: "75 min",
+            desc: `Et si votre vie ne faisait que commencer ? Un spectacle musical émouvant sur le courage de se réinventer à tout âge.<br>
 Camille, mère protectrice, a toujours voulu bien faire en organisant la vie des siens avec passion. Devenue envahissante pour ses deux enfants, elle se sent rejetée, sans soutien de son mari, qui lui porte un amour inconditionnel dont elle ne prend pas la mesure. Guidée par Anne, sa confidente, elle n’a pas d’autre choix que de surmonter peur, doutes et culpabilité pour reprendre sa vie en main.<br>
 Jusqu’où ira-t-elle pour enfin trouver sa place, sans mettre en péril l’équilibre familial ?<br><br>
 Sur des musiques originales accompagnées de chorégraphies de styles variés, c’est un message d’espoir que véhicule « Il est toujours le temps, le musical ». La communication, l’amour inconditionnel, la famille, le courage et l’estime de soi bercent le propos : l’accomplissement et le dépassement de soi quel que soit son âge.<br>
@@ -298,15 +311,15 @@ Production : N1portekoi Productions et Baralatatabaliba Compagnie<br><br>
 Avec Danaelle, Elisa Prévand Cohen, Stanislas Clément, Lilou Larre, Pierre-Louis Giffon, Clara Lambert, Yannis Roulof et Julie Gainetdinoff<br>
 Durée : 1h15<br><br>
 Âge conseillé : À partir de 16 ans`
-            }, {
-                title: "Qui a tué Madeleine ?",
-                image: "assets/images/show 4.jpg",
-                Dates: "10 Avr 2026- 26 Juin 2026",
-                Horaires: "Jeudi 21:15 Vendredi 21:15",
-                Salle: "1",
-                Tarif: "Plein tarif : 35.90€ / Tarif réduit : 26.60€",
-                Durée: "90 min",
-                desc: `La première comédie musicale et policière<br><br>
+        }, {
+            title: "Qui a tué Madeleine ?",
+            image: "assets/images/show 4.jpg",
+            Dates: "10 Avr 2026- 26 Juin 2026",
+            Horaires: "Jeudi 21:15 Vendredi 21:15",
+            Salle: "1",
+            Tarif: "Plein tarif : 35.90€ / Tarif réduit : 26.60€",
+            Durée: "90 min",
+            desc: `La première comédie musicale et policière<br><br>
 Une intrigue policière et musicale où les chansons trahissent autant qu’elles protègent. L’amour est le mobile, L’amitié, leur défense, L’humour… leur seule chance de s’en sortir. »<br>
 Quatre anciens amis se retrouvent plus de dix ans après leur séparation, dans la ville de leur enfance : Knokke-le-Zoute, la station balnéaire la plus chic de Belgique à l’auberge du Cerf Gris où ils croisent le célèbre commissaire Elliot Van Der Broeck, une vieille connaissance.<br>
 Le lendemain, celui-ci leur annonce une découverte glaçante : un corps vieux de plus de vingt ans vient d’être identifié. La victime serait probablement Madeleine, leur amie disparue. Ils comprennent enfin pourquoi Madeleine n’est jamais venue à ses rendez-vous. Le commissaire réalise alors que l’un d’eux pourrait être impliqué. Mais est-ce l’un d’entre eux ou les quatre à la fois ?<br>
@@ -315,15 +328,15 @@ Metteur en scène : Jaques Connort,<br><br>
 Chorégraphe : Sophie Mayer,<br><br>
 Arrangements musicaux : Frantz Fagot et Jaceuq Kapp<br><br>
 Attachée de presse : Marie-Paule Anfosso`
-            }, {
-                title: "Ça va chauffer !",
-                image: "assets/images/show 5.jpg",
-                Dates: "26 Sep 2025- 24 Juin 2026",
-                Horaires: "Mercredi-19:30 Jeudi-19:30 Vendredi-19:30 Samedi-19:30",
-                Salle: "1",
-                Tarif: "à partir de 17€",
-                Durée: "90min",
-                desc: `« Ça va chauffer ! », la comédie où les esprits s’échauffent plus vite que le climat !<br>
+        }, {
+            title: "Ça va chauffer !",
+            image: "assets/images/show 5.jpg",
+            Dates: "26 Sep 2025- 24 Juin 2026",
+            Horaires: "Mercredi-19:30 Jeudi-19:30 Vendredi-19:30 Samedi-19:30",
+            Salle: "1",
+            Tarif: "à partir de 17€",
+            Durée: "90min",
+            desc: `« Ça va chauffer ! », la comédie où les esprits s’échauffent plus vite que le climat !<br>
 J’ai découvert l’écologie à 45 ans, une aventure merveilleuse mais… Comment faire quand on est mariée à un transporteur routier accro au diesel ? Comment faire quand on veut rénover un immeuble contre tous ses habitants ? Comment faire quand un chasseur de subventions chasse l’argent, mais aussi les 06 ? Comment faire quand l’argent de la rénovation est détourné pour rembourser le fisc ?<br>
 De Sylvie AUDCOEUR, Bruno CHAPELLE et Olivier YÉNI <br><br>
 Mise en scène : Jean-Luc MOREAU <br><br>
@@ -332,76 +345,76 @@ Scénographie : Olivier PROST <br><br>
 Lumières : Jacques ROUVEYROLLIS <br><br>
 Musique : Sylvain MEYNIAC <br><br>
 Avec Aude LENER, Juliette POISSONNIER, Emmanuel DONZELLA, Olivier YÉNI, Benjamin BOLLEN`
-            }, {
-                title: "Redouanne Harjane",
-                image: "assets/images/show 6.jpg",
-                Dates: "10 Jan 2026- 18 Avr 2026",
-                Horaires: "Samedi-21:15",
-                Salle: "2",
-                Tarif: "à partir de 33.40€",
-                Durée: "90 MINUTES",
-                desc: `Redouanne Harjane a vu le futur.<br><br>
+        }, {
+            title: "Redouanne Harjane",
+            image: "assets/images/show 6.jpg",
+            Dates: "10 Jan 2026- 18 Avr 2026",
+            Horaires: "Samedi-21:15",
+            Salle: "2",
+            Tarif: "à partir de 33.40€",
+            Durée: "90 MINUTES",
+            desc: `Redouanne Harjane a vu le futur.<br><br>
 Et franchement c’est pas brillant.<br><br>
 Alors il en parle, il en rit, et parfois même…<br><br>
 Il le chante.<br><br>
 Dans « Je me souviens du futur », Redouanne Harjane mêle stand-up, chansons et réflexions absurdes pour raconter ce monde à venir dans lequel tout va trop vite.<br><br>
 Un spectacle ovni, entre poésie urbaine, groove philosophique et humour visionnaire.<br><br>
 Parce que oui le futur est déjà là et il vaut mieux en rire maintenant.`
-            }, {
-                title: "DONEL JACK’SMAN, NOUVEAU SPECTACLE",
-                image: "assets/images/show 7.jpg",
-                Dates: "25 Sep 2025- 27 Juin 2026",
-                Horaires: "Jeudi-21:00 Samedi-21:00",
-                Salle: "1",
-                Tarif: "27€",
-                Durée: "60 min",
-                desc: `Donel Jack’sman figure incontournable du standup, des réseaux sociaux et de la télévision française. Revient dans un nouveau spectacle aussi hilarant que engagé.<br><br>
+        }, {
+            title: "DONEL JACK’SMAN, NOUVEAU SPECTACLE",
+            image: "assets/images/show 7.jpg",
+            Dates: "25 Sep 2025- 27 Juin 2026",
+            Horaires: "Jeudi-21:00 Samedi-21:00",
+            Salle: "1",
+            Tarif: "27€",
+            Durée: "60 min",
+            desc: `Donel Jack’sman figure incontournable du standup, des réseaux sociaux et de la télévision française. Revient dans un nouveau spectacle aussi hilarant que engagé.<br><br>
 À voir de toute urgence !`
-            }, {
-                title: "Flemme",
-                image: "assets/images/show 8.jpg",
-                Dates: "27 Sep 2025- 29 Août 2026",
-                Horaires: "Lundi-15:00 Mardi-15:00 Mercredi-15:00 Jeudi-15:00 Vendredi-15:00 Samedi-15:00 Dimanche-14:00 Mercredi-14:30 Jeudi-14:30 Vendredi-14:30 Samedi-14:30",
-                Salle: "1",
-                Tarif: "12.95",
-                Durée: "75 min",
-                desc: "Les adultes deviennent des ados, pour que les ados deviennent des adultes….<br><br>Quand les parents pètent les plombs pour devenir des « boloss » et forcer leurs ados à devenir les « boss », préparez-vous à une comédie hilarante qui chamboule toutes les règles de la maison ! Flemme, c’est le choc des générations en mode inversé : les ados doivent gérer leurs parents… devenus ados rebelles.<br><br>Léo et Léa, deux ados en pleine crise, voient leur monde basculer quand leurs parents, Paps et Mams, décident de se comporter comme des ados immatures pour leur donner une bonne leçon. Pendant 24 heures, les rôles s’inversent : les ados se retrouvent à gérer des parents totalement déjantés.<br><br>Flemme, la nouvelle comédie familiale survoltée qui vous fera pleurer de rire tout en vous touchant droit au cœur !<br>A savoir : <br><br>Pascal GREGOIRE, l’auteur à succès de « La Guerre des Sexes », qui a conquis plus d’un million de spectateurs, revient avec une toute nouvelle comédie à partager en famille, sans modération !"
-            }, {
-                title: "Nadège dans 100 Gêne Puzzle",
-                image: "assets/images/show 9.jpg",
-                Dates: "17 Avr 2026- 29 Mai 2026",
-                Horaires: "Vendredi-21:15",
-                Salle: "2",
-                Tarif: "24€",
-                Durée: "-",
-                desc: "Puzzle est le premier spectacle solo de Nadège, offrant une exploration intime de son parcours en tant que femme, fille d’immigrés et citoyenne du monde.<br>Le spectacle, mêlant anecdotes personnelles et réflexions profondes, aborde des thèmes tels que la maternité, le burnout, la charge mentale, et les défis d’être une femme aujourd’hui. Avec humour et émotion, Nadège construit un récit qui invite le public à rire, réfléchir et ressentir.<br><br>Chaque histoire dévoile une pièce de son puzzle de vie, offrant une perspective sur sa propre existence et celle des spectateurs."
-            }, {
-                title: "Je t’aime à l’italienne/algérienne",
-                image: "assets/images/show 10.png",
-                date: "02 Mai 2025- 27 Juin 2026",
-                time: "Vendredi-19:30 Samedi-18:00 Samedi-19:30 Dimanche-18:00",
-                Salle: "Salle 2",
-                price: "-",
-                duration: "1h15",
-                desc: "La plus méditerranéenne des comédies est de retour à Paris !<br><br>Le titre de cette comédie aldente vous rappelle une chanson ringarde voire un poil cul-cul de Frédéric François ?<br><br>C’est normal puisque dans « Je t’aime à l’italienne », il est bien évidemment question d’amour.<br><br>Et plus particulièrement de l’histoire d’amour entre Aïcha et Carlo qui dure depuis deux ans.<br><br>Seulement voilà, Carlo a complètement zappé de prévenir Farid, le frère d’Aïcha, dragueur invétéré et accessoirement son meilleur ami. Comment va t-il réagir ?<br><br>Mais l’arrivée de la flamboyante Rachel risque de tout compromettre…<br><br>Le saviez-vous ?<br><br>Après 6 festivals d’Avignon, une tournée en France et à l’international, cette comédie sur l’amour multiculturel compte déjà plus de 1000 représentations et 500 000 spectateurs ! C’est un hymne à l’amour et à la mixité.<br><br>À savoir :<br><br>Places Premium, attention ces places ne sont plus valables après le début du spectacle"
-            }, {
-                title: "RODRIGUE",
-                image: "assets/images/show 11.png",
-                date: "03 Jan 2026- 26 Avr 2026",
-                time: "Samedi-18:00 Dimanche-17:00",
-                Salle: "1",
-                price: "26 €",
-                duration: "-",
-                desc: "Rodrigue, étoile montante de la nouvelle génération, pose son micro à la Scène Parisienne.<br><br>Depuis six ans sur scène, Rodrigue a affiné son regard : celui du gars qui a vu la routine du boulot, le stress, les hiérarchies, mais aussi les petites absurdités qui font sourire… ou grincer. Ici, l’humour devient une arme douce : pour rire de nos propres faiblesses, de nos styles de vannes, de ce qui passe ou pas dans les conversations. Et quand les grands bouleversements de notre époque pointent à l’horizon, il y voit une belle occasion de prendre du recul… et de se marrer.<br><br>JUICY PRODUCTION PRÉSENTE"
-            }, {
-                title: "ET PENDANT CE TEMPS SIGMUND FREUDONNE",
-                image: "assets/images/show 12.jpg",
-                date: "02 Fév 2026- 26 Mai 2026",
-                time: "Lundi-19:00",
-                Salle: "1",
-                price: "à partir de 26€",
-                duration: "90 minutes",
-                desc: `après Et pendant ce temps Simone veille !<br><br>
+        }, {
+            title: "Flemme",
+            image: "assets/images/show 8.jpg",
+            Dates: "27 Sep 2025- 29 Août 2026",
+            Horaires: "Lundi-15:00 Mardi-15:00 Mercredi-15:00 Jeudi-15:00 Vendredi-15:00 Samedi-15:00 Dimanche-14:00 Mercredi-14:30 Jeudi-14:30 Vendredi-14:30 Samedi-14:30",
+            Salle: "1",
+            Tarif: "12.95",
+            Durée: "75 min",
+            desc: "Les adultes deviennent des ados, pour que les ados deviennent des adultes….<br><br>Quand les parents pètent les plombs pour devenir des « boloss » et forcer leurs ados à devenir les « boss », préparez-vous à une comédie hilarante qui chamboule toutes les règles de la maison ! Flemme, c’est le choc des générations en mode inversé : les ados doivent gérer leurs parents… devenus ados rebelles.<br><br>Léo et Léa, deux ados en pleine crise, voient leur monde basculer quand leurs parents, Paps et Mams, décident de se comporter comme des ados immatures pour leur donner une bonne leçon. Pendant 24 heures, les rôles s’inversent : les ados se retrouvent à gérer des parents totalement déjantés.<br><br>Flemme, la nouvelle comédie familiale survoltée qui vous fera pleurer de rire tout en vous touchant droit au cœur !<br>A savoir : <br><br>Pascal GREGOIRE, l’auteur à succès de « La Guerre des Sexes », qui a conquis plus d’un million de spectateurs, revient avec une toute nouvelle comédie à partager en famille, sans modération !"
+        }, {
+            title: "Nadège dans 100 Gêne Puzzle",
+            image: "assets/images/show 9.jpg",
+            Dates: "17 Avr 2026- 29 Mai 2026",
+            Horaires: "Vendredi-21:15",
+            Salle: "2",
+            Tarif: "24€",
+            Durée: "-",
+            desc: "Puzzle est le premier spectacle solo de Nadège, offrant une exploration intime de son parcours en tant que femme, fille d’immigrés et citoyenne du monde.<br>Le spectacle, mêlant anecdotes personnelles et réflexions profondes, aborde des thèmes tels que la maternité, le burnout, la charge mentale, et les défis d’être une femme aujourd’hui. Avec humour et émotion, Nadège construit un récit qui invite le public à rire, réfléchir et ressentir.<br><br>Chaque histoire dévoile une pièce de son puzzle de vie, offrant une perspective sur sa propre existence et celle des spectateurs."
+        }, {
+            title: "Je t’aime à l’italienne/algérienne",
+            image: "assets/images/show 10.png",
+            date: "02 Mai 2025- 27 Juin 2026",
+            time: "Vendredi-19:30 Samedi-18:00 Samedi-19:30 Dimanche-18:00",
+            Salle: "Salle 2",
+            price: "-",
+            duration: "1h15",
+            desc: "La plus méditerranéenne des comédies est de retour à Paris !<br><br>Le titre de cette comédie aldente vous rappelle une chanson ringarde voire un poil cul-cul de Frédéric François ?<br><br>C’est normal puisque dans « Je t’aime à l’italienne », il est bien évidemment question d’amour.<br><br>Et plus particulièrement de l’histoire d’amour entre Aïcha et Carlo qui dure depuis deux ans.<br><br>Seulement voilà, Carlo a complètement zappé de prévenir Farid, le frère d’Aïcha, dragueur invétéré et accessoirement son meilleur ami. Comment va t-il réagir ?<br><br>Mais l’arrivée de la flamboyante Rachel risque de tout compromettre…<br><br>Le saviez-vous ?<br><br>Après 6 festivals d’Avignon, une tournée en France et à l’international, cette comédie sur l’amour multiculturel compte déjà plus de 1000 représentations et 500 000 spectateurs ! C’est un hymne à l’amour et à la mixité.<br><br>À savoir :<br><br>Places Premium, attention ces places ne sont plus valables après le début du spectacle"
+        }, {
+            title: "RODRIGUE",
+            image: "assets/images/show 11.png",
+            date: "03 Jan 2026- 26 Avr 2026",
+            time: "Samedi-18:00 Dimanche-17:00",
+            Salle: "1",
+            price: "26 €",
+            duration: "-",
+            desc: "Rodrigue, étoile montante de la nouvelle génération, pose son micro à la Scène Parisienne.<br><br>Depuis six ans sur scène, Rodrigue a affiné son regard : celui du gars qui a vu la routine du boulot, le stress, les hiérarchies, mais aussi les petites absurdités qui font sourire… ou grincer. Ici, l’humour devient une arme douce : pour rire de nos propres faiblesses, de nos styles de vannes, de ce qui passe ou pas dans les conversations. Et quand les grands bouleversements de notre époque pointent à l’horizon, il y voit une belle occasion de prendre du recul… et de se marrer.<br><br>JUICY PRODUCTION PRÉSENTE"
+        }, {
+            title: "ET PENDANT CE TEMPS SIGMUND FREUDONNE",
+            image: "assets/images/show 12.jpg",
+            date: "02 Fév 2026- 26 Mai 2026",
+            time: "Lundi-19:00",
+            Salle: "1",
+            price: "à partir de 26€",
+            duration: "90 minutes",
+            desc: `après Et pendant ce temps Simone veille !<br><br>
 
 <video width="100%" controls>
     <source src="assets/images/sigmund_bande-annonce_paris-1080p.mp4" type="video/mp4">
@@ -410,305 +423,305 @@ Parce que oui le futur est déjà là et il vaut mieux en rire maintenant.`
 
 <br><br>
 Susciter le rire et provoquer l’auto-critique et l’auto-dérision tout en encourageant l’empathie envers ces parcours masculins. Citoyen et solidaire, on aime beaucoup.<br><br>La Provence<br><br>————————————————————-<br><br>Un moment de pur plaisir et d’humour partagé.<br><br>Ils sont tout simplement hilarants !<br><br>Magcentre<br><br>————————————————————-<br><br>De la dramaturge et comédienne Trinidad on connaissait « Et pendant ce temps-là Simone Veille ! » où elle retraçait avec humour la (trop lente) évolution de la condition féminine (…) Tinidad réalise le même spectacle sur les hommes.<br><br>Voilà un spectacle théâtral et musical de toute première importance.<br><br>Destimed<br><br>————————————————————-<br><br>En 2012, suite à l’affaire Strauss Kahn, j’ai créé “Et pendant ce temps Simone veille”, qui raconte l’histoire de la condition féminine en France depuis les années 1950 à nos jours, à travers quatre lignées de femmes sur quatre générations.<br><br>Ce spectacle constituait pour moi un devoir de mémoire pour rappeler d’où l’on vient afin d’éviter d’y retourner. Un jour un ami m’a glissé à l’oreille : « Tu devrais faire la même chose pour les hommes ! ».<br><br>D’emblée l’idée m’a séduite. Mon idée du féminisme a toujours été d’avancer ensemble, hommes et femmes main dans la main. Mais autant quand vous mettez trois femmes sur un banc pendant une heure, elles se racontent leur vie, autant des hommes réunis sur un banc pendant une vie se racontent à peine une heure !<br><br>J’ai donc voulu, dans une tonalité humoristique et musicale, tenter de percer le silence des hommes et leurs difficultés à être homme à travers l’histoire, en entrant dans l’univers masculin en accompagnant quatre lignées d’hommes sur plusieurs générations, avec en fil rouge le personnage de Miss Freud, conteuse de cette évolution de la condition masculine et point de jonction entre les différents personnages masculins. Trinidad<br><br>Avec Trinidad- Sébastien Fouillade – Marin Langlois- Patrick Mazet – Clément Vieu – Nicolas Jazat <br><br>Mise en scène – Gil Galliot<br>Chorégraphie – Johan Nus<br>Costumes – Chouchane Abello-Tcherpachian<br>Scénographie – Sophie Jacob<br>Musique – Pascal Lafa<br><br><br>Durée : 1h30<br><br>Conseillé à partir de 12 ans `
-            }, {
-                title: "Le Fieald",
-                image: "assets/images/show 13.jpg",
-                date: "07 Sep 2025- 21 Juin 2026",
-                time: "Dimanche-20:30",
-                Salle: "Salle 1",
-                price: "à partir de 19.95€",
-                duration: "120 minutes",
-                desc: "Envie d’une soirée drôle, insolite et pleine de surprises ? Ne manquez pas le FIEALD, la plus folle scène ouverte de Paris ! Chaque dimanche à 20h30 dans le 9e arrondissement, un spectacle unique prend vie sous vos yeux…<br><br>Bien plus qu’un comedy club, le FIEALD offre depuis plus de 30 ans un tremplin aux talents émergents : humoristes, chanteurs, comédiens et artistes de tous horizons se succèdent pour vous surprendre, vous émouvoir et vous faire rire. Improvisation et créativité sont les maîtres-mots de cette soirée incontournable !<br><br>CE DIMANCHE 26 AVRIL, LE FIEALD RECOIT L’ACADÉMIE DE L’HUMOUR <br><br>Imaginez une scène ouverte aux artistes de toutes disciplines, sans audition… C’est l’histoire du FIEALD depuis 1991 !<brr><br>Six artistes sont sélectionnés au hasard, une troupe de doux-dingues écrit des sketchs inédits chaque semaine et le groupe de musique met le feu aux planches du théâtre en live.<br><br>Humour, musique, magie, burlesque… On voit de tout et c’est différent chaque dimanche. N’hésitez plus ! Cette semaine, pour sa 1342e édition, le Fieald accueille Jo Brami et Samia Orosemane !<br><br>À savoir : Spectacle déconseillé aux moins de 14 ans.<br><br>LE FIEALD : UNE PÉPINIÈRE DE TALENTS Depuis sa création en 1991, le FIEALD a vu défiler de nombreux artistes devenus aujourd’hui des incontournables de la scène artistique française. Parmi eux, on retrouve notamment Dany Boon, Florence Foresti, Aymeric Lompret, Jamel Debbouze, Shirley Souagnon, Kyan Khojandi, Tania Dutel ou Constance.<br><br>Outre les humoristes, de nombreux chanteurs ont aussi foulé les planches du FIEALD, comme les Franglaises, les Wriggles, les Triwap et même Bigflo et Oli !"
-            }, {
-                title: "WILLEM FAIT LE COMIQUE",
-                image: "assets/images/show 14.png",
-                date: "25 Fév 2026- 27 Mai 2026",
-                time: "Mercredi-19:30 Mercredi-21:15",
-                Salle: "1",
-                price: "24 euros",
-                duration: "80 min",
-                desc: "Un premier spectacle généreux et profondément personnel.<br><br> Dans « Willem fait le comique », l’humoriste se livre avec sincérité et autodérision à travers des anecdotes de vie, des observations savoureuses sur la société, et des sketchs hilarants qui explorent nos contradictions. Dresscode: VERT."
-            }, {
-                title: "Délivrez-nous du mâle",
-                image: "assets/images/show 15.jpg",
-                date: "17 Fév 2026- 28 Avr 2026",
-                time: "Mardi-21:15",
-                Salle: "2",
-                price: "17,50 €",
-                duration: "90 min",
-                desc: "On a fait la bringue dans un monastère hier ? J’ai un moine dans mon canapé !<br>Une délirante et irrévérencieuse comédie dans un authentique dérapage théâtral<br><br>Lola dirige une armée de financiers à la testostérone épanouie. Elle est sexy, célibataire et… compliquée. Au lendemain d’une bringue « de compétition », Lola trouve un moine, Frère Félicien, dans son canapé… Là, Lola se demande si elle n’aurait quand même pas loupé un virage… Et lorsque Dieu décide de s’en mêler… Il n’y a plus de doute : elle est sûre d’avoir dérapé ! Elle est loin, très loin, d’être au bout de ses surprises. Et Frère Félicien aussi d’ailleurs !<br><br>Crédits:<br><br>Comédiens : Claire HOFFMANN & Fabien CECCHINI<br><br>avec la voix de Chantal LADESOU<br><br>Auteur : Antoine BEAUVILLE<br><br>Mise en scène : Carole BARBIER<br><br>Compagnie ValEMarts produite par Bleu Blanc Ciel"
-            }, {
-                title: "Nadège 100 Gêne dans Puzzle",
-                image: "assets/images/show 16.jpeg",
-                date: "17 Avr 2026- 29 Mai 2026",
-                time: "Vendredi-21:15",
-                Salle: "2",
-                price: "24 euros",
-                duration: "70 min",
-                desc: "Puzzle est le premier spectacle solo de Nadège, offrant une exploration intime de son parcours en tant que femme, fille d’immigrés et citoyenne du monde.<br><br>Le spectacle, mêlant anecdotes personnelles et réflexions profondes, aborde des thèmes tels que la maternité, le burnout, la charge mentale, et les défis d’être une femme aujourd’hui. Avec humour et émotion, Nadège construit un récit qui invite le public à rire, réfléchir et ressentir.<b><br>Chaque histoire dévoile une pièce de son puzzle de vie, offrant une perspective sur sa propre existence et celle des spectateurs."
-            }, {
-                title: "Le Prix Copeau 2026",
-                image: "assets/images/show 17.jpg",
-                date: "22 Juin 2026- 22 Juin 2026",
-                time: "Lundi-20:00",
-                Salle: "1",
-                price: "À partir de 5€",
-                duration: "90 min",
-                desc: "Une soirée unique où les élèves de notre école se confrontent au regard d’un jury présidé par Michel Fau.<br><br>Le Prix Copeau 2026 marque l’aboutissement de l’année de formation professionnelle de l’acteur du Foyer, école de théâtre à Paris. Lors de cette représentation publique, les élèves présentent sur scène le fruit de leur travail devant un jury de professionnels du spectacle vivant, présidé par Michel Fau, comédien et metteur en scène. Cette soirée emblématique permet aux jeunes acteurs de se confronter aux conditions du plateau professionnel et au regard du public, dans un moment artistique qui vient conclure leur parcours de formation.<br><br>Crédits :<br><br>Avec : Les élèves de la Formation professionnelle de l’acteur — promotion 2025/2026<br><br>Présidé par : Michel Fau<br><br>Production : Le Foyer — Cours d’Art Dramatique"
-            }, {
-                title: "Wary Nichen en arabe",
-                image: "assets/images/show 18.jpg",
-                date: "30 Mai 2026- 05 Juil 2026",
-                time: "Samedi-16:30 Dimanche-16:30",
-                Salle: "2",
-                price: "25 euros",
-                duration: "60 min",
-                desc: "Un conte de stand up raconté par un dz citoyen du monde en arabe darija<br><br>S’il t’arrive de glisser les mots « Labes », « amdoulah » et « inchalah » dans une discussion entre potes, ce message n’est pas pour toi. Par contre, si tu as déjà mangé du « chikoula », regardé un moussalssal sans saigner du nez ou si tu connais qui est Grindaizar, l’Inspecteur Tahar, Fairouz, Adel Imam, Sinan, Joumarou, Labiba, Captin Majed ou si tu reconnais les refrains de Cheb Hasni, le show est pour toi.<br><br>Crédits : <br>Wary Nichen"
-            }, {
-                title: "Thomas Barbazan : On l’appelait DJ Chelou",
-                image: "assets/images/show 19.png",
-                date: "18 Juin 2026- 18 Juin 2026",
-                time: "Jeudi-19:30",
-                Salle: "1",
-                price: "20.50€",
-                duration: "1h10",
-                desc: "Le parodieur le plus golri de l’Ouest est de retour dans le secteur pour un spectacle inédit.<br><br>Thomas Barbazan a conquis le public avec ses parodies sous le nom de DJ Chelou. <br><br>Âge conseillé :  <br>À partir de 12 ans."
-            }, {
-                title: "ZAC BULLE – Spectacle en bricolage",
-                image: "assets/images/show 20.png",
-                date: "07 Mai 2026- 07 Mai 2026",
-                time: "Jeudi-19:30",
-                Salle: "1",
-                price: "25€",
-                duration: "1h15",
-                desc: "Quand Zac Bulle (de son vrai nom Zachary Allard) commence à partager de courts films cocasses sur le web alors qu’il n’a que neuf ans, il est loin de se douter que l’humour allait devenir son art de prédilection et un synonyme de succès.<br><br>Influencé par les propositions décalées des Denis Drolet et des Appendices, mais aussi plus récemment, du style sans compromis de Jean-Michel Martel et Maxime Gervais, Zac Bulle se distingue par sa maîtrise de l’absurde, incarnée avec brio à travers son personnage iconique, faussement juvénile, de petit garçon gêné et malaisant.<br><br>D’un côté, ses vidéos youtube lui permettent de se faire remarquer sur la scène québécoise et de rassembler plus de 50 000 fans. De l’autre, des plateformes où domine des clips plus courts et punchés – tel qu’Instagram et TikTok – lui servent à dilater la rate à plus de 1.3 millions abonnés grâce à du contenu livré avec constance et dévouement. Impressionnant qu’en parallèle à sa carrière foisonnante, l’infatigable Zac ait récolté un diplôme en animation 3D, talent qu’il met à profit à même ses créations hallucinogènes.<br><br>On le compte désormais parmi les rangs de la réputée Agence Lol Lol Lol, plus prêt que jamais à partager avec la planète sa passion sans fond pour la mayonnaise."
-            }, {
-                title: "Le spectacle américain des Blues Brothers par The Real Eight Killers",
-                image: "assets/images/show 21.png",
-                date: "16 Oct 2025- 11 Juin 2026",
-                time: "Jeudi-21:15",
-                Salle: "1",
-                price: "30€",
-                duration: "80 min",
-                desc: "La suite du film « The Blues Brothers » en live, plus Rock, Blues, Burlesque. Une mise en scène déjantée avec des guitares cassées, des tirs aux pistolets, de Everybody Needs à Carmen de Bizet. Le tout exécuté par des musiciens chanteurs qui ont joué notamment avec BB King, Chuck Berry, Prince…<br><br>Après avoir foulé les plus grandes scènes (l’Olympia, les Zéniths, les plus grandes scènes européennes jusqu’au Mexique et au Canada), les Eight Killers reçoivent le trophée d’or du meilleur concert live de l’année."
-            }, {
-                title: "Concours GOAT des comédiens – Saison 4",
-                image: "assets/images/500.jpg",
-                date: "13 Juin 2026- 13 Juin 2026",
-                time: "Samedi-20:00",
-                Salle: "1",
-                price: "23€",
-                duration: "120 minutes",
-                desc: "Créez le personnage de vos rêves, écrivez son histoire et donnez-lui vie sur scène.<br><br>Le Concours GOAT des comédiens est une compétition artistique unique qui se déroule à travers une phase de sélection organisée dans 5 villes en France. À l’issue de ce parcours, 10 finalistes sont retenus et bénéficient d’un accompagnement par des coachs professionnels afin de préparer la grande finale, qui se tiendra au théâtre La Scène Parisienne.<br>Répartis en deux catégories, théâtre et cinéma, les candidats présentent sur scène leur personnage à travers différentes épreuves, devant un jury de professionnels, un public ainsi que les coachs.<br>Au-delà du concours, la finale est pensée comme un véritable show immersif, porté par une mise en scène dynamique et une scénographie travaillée, offrant au public une expérience complète. L’événement constitue également un tremplin, avec des récompenses concrètes visant à accompagner le développement artistique et professionnel des participants.<br><br>Production : GOAT des comédiens<br>Fondateur / Présentateur : Yann Fricker<br>Direction artistique : Wilfried Gonon<br>Coordination : Camille Vassard Blum<br>Technique : Flora / Almeric / Laurie"
-            }, {
-                title: "ARLETTY, UN CŒUR TRÈS OCCUPÉ",
-                image: "assets/images/show 23.jpg",
-                date: "08 Jan 2026- 27 Avr 2026",
-                time: "Mardi-19:30 Jeudi-19:30 Vendredi-21:00 Dimanche-16:30",
-                Salle: "2",
-                price: "32",
-                duration: "90 minutes",
-                desc: "Arletty comme vous ne l’avez jamais vu ! Grâce à une correspondance foisonnante et inédite, venez découvrir cette femme touchante et bouleversante qui assumera son amour controversé pour un officier allemand. <br><br>Assistez à une formidable joute pleine de tendresse et d’humour entre deux générations pour démontrer, à travers cette passion interdite, que l’amour est sans frontière !<br><br>Avec Béatrice Costantini et François Nambot <br><br>Auteur : Jean-Luc Voulfow <br><br>Mise en scène : François Nambot <br><br>Lumières : Jacques Rouveyrollis <br><br>Extraits Médias<br>--------------<br><br>« Magnifique face-à-face » MAXI<br><br>« Exceptionnelle interprétation » LE FIGARO<br><br>« Un huit clos passionnant » PUBLIC<br><br>« Très belle pièce » LE PARISIEN<br><br>« Étonnante, incroyable » T18<br><br>« Magnifiquement interprété » ICI TV"
-            }, {
-                title: "NOTRE CHER AUTEUR",
-                image: "assets/images/show 24.jpg",
-                date: "20 Jan 2026- 28 Avr 2026",
-                time: "Mardi-19:30",
-                Salle: "2",
-                price: "27,50 €",
-                duration: "-",
-                desc: "Comment transformer une tragédie en comédie sans que l’auteur s’en rende compte ? Serge est à la recherche d’une pièce à mettre en scène et à jouer avec Mathilde, dont il est follement amoureux.<br><br>Il obtient d’Anton, un dramaturge renommé mais réticent suite à plusieurs expériences malheureuses, sa dernière pièce intitulée un peu sombrement « Fin d’Automne » – à la seule condition de n’y rien changer.<br><br>Mais c’est sans compter Mathilde, qui a une toute autre vision des choses…<br><br>La joyeuse métamorphose d’une tragédie en comédie – ou les tribulations d’un auteur sérieux, pris malgré lui dans le tourbillon d’une danse totalement inattendue.<br><br>Crédits :<br>-------------<br><br>Auteur : Ana-Maria Bamberger<br><br>Metteur en scène : Jean-Philippe Azéma<br><br>Avec : Marie-Hélène Lentini, Jean-Philippe Azéma, François Legrand, François Nambot<br><br>Production : Magus Théâtre Productions & Mes Potes et Moi"
-            }, {
-                title: "La vieille",
-                image: "assets/images/show 25.png",
-                date: "22 Mar 2026- 24 Juin 2026",
-                time: "Dimanche-19:30 Mardi-19:30 Mercredi-19:30 Jeudi-19:30",
-                Salle: "2",
-                price: "à partir de 19€",
-                duration: "75 MINUTES",
-                desc: "Et si le mort n’était pas tout à fait mort ?<br><br>Une étrange vieille se rend à l’appartement du personnage principal. À peine entrée, voilà qu’elle meurt. Mais son décès n’est pas définitif : la vieille morte se déplace dans la pièce et se montre même agressive. Les tentatives du héros pour se débarrasser du corps, en l’emportant en dehors de la ville dans une valise et en l’immergeant dans un marécage, se soldent par un fiasco tragique-comique : la valise est volée.<br><br>Mise en scène : Maria de Valukhoff<br><br>Mouvement :  Aurore Borgo<br><br>Arrangements, piano : Natalia Skvortsova<br><br>Design et graphisme : Igor Gourovitch<br><br><br>À partir de 12 ans"
-            }, {
-                title: "BODYCOUNT",
-                image: "assets/images/show 26.jpg",
-                date: "04 Avr 2026- 25 Avr 2026",
-                time: "Samedi-19:30",
-                Salle: "2",
-                price: "22.50€",
-                duration: "-",
-                desc: "LA COMÉDIE QUI COMPTE…<br><br>Alex est un romantique convaincu, Sabrina et Sébastien, ses amis, sont tout le contraire : libérés, explosifs et imprévisibles. Quand il rencontre Julia, sa voisine, c’est l’évidence. Mais lorsque les quatre se retrouvent autour d’un dîner, le passé refait surface… et tout dérape !<br><br>Auteur : Jean-Philippe Mayer<br>Metteuse en scène : Sandra Lovisa,<br>Production : Jean-Philippe Mayer Productions.<br><br><br>Âge conseillé : <br>À partir de 16 ans"
-            }, {
-                title: "À Contretemps",
-                image: "assets/images/show 27.png",
-                date: "11 Avr 2026- 22 Avr 2026",
-                time: "Lundi-21:15 Mardi-19:00 Mercredi-21:15 Samedi-16:30",
-                Salle: "1",
-                price: "15",
-                duration: "90 min",
-                desc: "2050. Le voyage temporel existe enfin … Mais seulement pour les plus privilégiés. Une Brigade Inter Temporelle veille au grain en réparant les anomalies de la ligne chronologique provoquées par les négligences des touristes temporels. Mais si ces incidents n’étaient pas que des erreurs isolées ? Et si quelqu’un souhaitait faire dérailler le cours du temps ? La Brigade Inter Temporelle réussira-t-elle à préserver l’humanité ?"
-            }, {
-                title: "Frédéric Bukolé dans Épopée",
-                image: "assets/images/show 28.jpg",
-                date: "31 Jan 2026- 27 Juin 2026",
-                time: "Samedi-19:30 Samedi-21:15",
-                Salle: "2",
-                price: "À partir de",
-                duration: "60 min",
-                desc: "Épopée, la célébration de la résilience et de l’humour qui transforme chaque épreuve en une aventure mémorable.<br><br>C’est au travers de son spectacle « Épopée » que Frédéric Bukolé vous invite à découvrir sa quête du bonheur. Il raconte son propre voyage : celui d’un petit garçon quittant une petite ville de la République Démocratique du Congo à l’âge de 10 ans, persuadé que l’Europe lui apporterait le bonheur.<br><br>À travers un récit captivant et empreint d’humour, Frédéric transforme les défis de sa vie en anecdotes à la fois émouvantes et hilarantes. Il partage ses expériences d’adaptation culturelle, ses mésaventures et ses triomphes personnels, dévoilant la richesse et la diversité de son parcours."
-            }, {
-                title: "Grand temps",
-                image: "assets/images/show 29.jpg",
-                date: "27 Nov 2025- 04 Juin 2026",
-                time: "Jeudi-07:30",
-                Salle: "1",
-                price: "35 €",
-                duration: "75",
-                desc: "Avec son humour tranchant et son franc-parler, Coco Makmak décortique les contradictions culturelles dans un one-woman show explosif. Big Time fait rire, dérange et questionne, en disant tout haut ce que l’on pense tout bas.<br><br>Big Time c’est 1h15 d’humour sans filtre signé Coco Makmak. Entre tabous familiaux, mariages mixtes et chocs culturels, elle transforme les contradictions en rires contagieux. Un spectacle drôle mais piquant."
-            }, {
-                title: "Les Années Folles",
-                image: "assets/images/show 30.png",
-                date: "02 Avr 2026- 07 Mai 2026",
-                time: "Jeudi-15:00",
-                Salle: "1",
-                price: "30,80€",
-                duration: "90 min",
-                desc: "Dans la vie faut pas s’en faire! » Avec Maurice Chevalier, Charles Trenet et Arletty, « il y a toujours de la joie!<br><br>Dans la Vie faut pas s’en faire, Un baiser, La Mer… venez chanter avec Maurice Chevalier, Arletty et Charles Trenet le temps d’un intermède de music-hall et retrouvez cette période de fête perpétuelle.<br>De Pas sur la Bouche de Maurice Yvain en passant par les refrains célèbres de Paris sera toujours Paris à J’aime le music-hall.… dans ce spectacle: Y’a d’la joie!<br>– Livret et mise en scène d’Emmanuel Marfoglia- Avec Philippe Padovani, Thomas Marfoglia, Ariane-Olympe Girard et Leo Debono au piano"
-            }, {
-                title: "JE SUIS LA FEMME ",
-                image: "assets/images/show 31.jpg",
-                date: "10 Juin 2026- 10 Juin 2026",
-                time: "Mercredi-19:30",
-                Salle: "2",
-                price: "à partir de 12.50€",
-                duration: "70 minutes",
-                desc: "JE SUIS LA FEMME – L’Éveil d’une Humanité Sensible<br><br>« Et si votre plus grande force était votre vulnérabilité ? »<br><br>Bien plus qu’un spectacle, Je suis la femme est une épopée de l’âme. Porté par la voix vibrante d’Abad, « Le Prince des Poètes », ce voyage immersif utilise la figure de la femme comme le miroir de notre propre sensibilité.<br><br>Dans une mise en scène épurée et monumentale, les mots s’entrelacent aux chefs-d’œuvre cinématographiques de Hans Zimmer, Ryuichi Sakamoto, Chopin et Beethoven. Entre poésie brute et animations vidéo envoûtantes, laissez-vous emporter par cette traversée sensorielle unique. Une réconciliation nécessaire avec notre part d’invisible.<br><br>Venez vivre l’instant où le souffle devient texte et où la faille devient lumière<br><br>Auteur : Abad Boumsong <br><br>Direction artistique : Princesse Paillettes <br><br><br>Spectacle à partir de 7 ans"
-            },
-            // {
-            //     title: "Денис Чужой в Париже",
-            //     image: "assets/images/show 32.png",
-            //     date: "Feb - May 2026",
-            //     time: "19:00",
-            //     price: "20€",
-            //     duration: "80 min",
-            //     desc: "Comedy theatrical show."
-            // },
-            // , {
-            //     title: "SARAH DONNA: LE VOYAGE EN-CHANTANT, SAISON 2",
-            //     image: "assets/images/show 33.jpg",
-            //     date: "Feb - May 2026",
-            //     time: "19:00",
-            //     price: "20€",
-            //     duration: "80 min",
-            //     desc: "Comedy theatrical show."
-            // }, 
-            {
-                title: "NABIL KOLLEB dans Tounsi W Nos",
-                image: "assets/images/show 34.jpg",
-                date: "25 Avr 2026- 25 Avr 2026",
-                time: "Samedi-21:15",
-                Salle: "1",
-                price: "31,30€",
-                duration: "75 min",
-                desc: "Dans son spectacle, Nabil remarque que son quotidien est bizarre, pourtant il a un job, une famille, des enfants, mais réellement rien ne va.<br><br>Il creuse alors dans ses souvenirs d’enfance, son entourage et même dans l’histoire du pays pour finalement comprendre que le vrai problème c’est lui.<br>Et là, il doit choisir entre le malheur de garder ses principes ou le bonheur de suivre la foule."
-            }, {
-                title: "Carte blanche à Fanny Delaigue",
-                image: "assets/images/show 35.png",
-                date: "04 Mai 2026- 04 Mai 2026",
-                time: "Lundi-21:15",
-                Salle: "1",
-                price: "à partir de 29€",
-                duration: "2H",
-                desc: "Fanny Delaigue, de la comédie musicale à la pop : une soirée 100 % live<br><br>De la comédie musicale à la Star Academy, Fanny et ses musiciens retracent des moments marquants dans des versions 100% Live et des arrangements inédits qui vous feront redécouvrir les chansons.De Grease à Holidays (avec les titres de Madonna), en passant par Resiste avec France Gall, aux moments mémorables de la Star Academy saisons 2024 et 2025, les titres qui vous ont fait danser, ceux qui vous ont émus, Charlotte Cardin, Hoshi, Raye…<br><br>Passez une soirée ponctuée de nostalgie, de tubes que vous pourrez chanter à tue-tête, et surtout de partage en Live.<br><br>Auteure : Danièle Adad<br><br>Ouverture : Il est toujours temps, les chansons du musical<br><br>Compositrice : Fanny Delaigue<br><br>Interprètes : Danaelle, Élisa Prévand-Cohen, Stanislas Clément, Lucie Mantez, Pierre-Louis Giffon<br><br>Musiciens :<br><br>Batterie : Pascal Bihannic<br><br>Clavier : Cyril Broque<br><br>Guitares : Sebastien Klatt<br><br>Concert :<br><br>Chant : Fanny Delaigue<br><br>Musiciens :<br><br>Batterie : Corto Vermee<br><br>Clavier : Mickaël Randrianasolo<br><br>Basse : Julien Droz-Vincent<br><br>Guitares : Ivan Quintero<br><br>Production : N1portekoi Productions et Baralatatabaliba Compagnie<br><br><br>Spectacle à partir de 12 ans"
-            }, {
-                title: "Concert du groupe Tazenda",
-                image: "assets/images/show 36.jpg",
-                date: "20 Mai 2026- 20 Mai 2026",
-                time: "Mercredi-20:00",
-                Salle: "1",
-                price: "à partir de 18€",
-                duration: "-",
-                desc: "Gino Marielli   guitare et voix  Gigi Camedda   piano et voix Serena Carta Mantiglia   voix soliste et clavier   Massimo Cossu   guitares<br><br>Le groupe ethno-pop-rock historique qui a fait connaître la chanson en langue sarde au-delà des frontières de l’île, remportant un grand succès et une vive appréciation dans toute l’Italie et au-delà, chantant également en italien, sera pour la première fois en concert à Paris.<br>Déjà réunis au sein du « Coro degli Angeli », Gigi Camedda, Gino Marielli et Andrea Parodi ont fondé le groupe Tazenda en 1988. Après le départ de ce dernier, qui en était le légendaire chanteur soliste, le groupe a poursuivi depuis 1997 jusqu’à aujourd’hui un parcours artistique de grande valeur, avec différentes formations et de nombreux albums et concerts. Il compte actuellement parmi ses membres l’excellente chanteuse soliste Serena Carta Mantiglia.  La soirée s’ouvrira avec Pepemauro, auteur-compositeur-interprète et comédien italien originaire de Calabre résidant à Paris, qui interprétera des chansons originales issues de son répertoire."
-            }, {
-                title: "le Sourire de Luis: hommage à Luis Mariano",
-                image: "assets/images/show 37.png",
-                date: "26 Mai 2026- 04 Juin 2026",
-                time: "Mardi-15:00 Jeudi-15:00",
-                Salle: "1",
-                price: "à partir de 39€",
-                duration: "-",
-                desc: "De La Belle de Cadix au Chanteur de Mexico, venez revivre les grands moments de cet immense artiste qu’était Luis Mariano.<br><br>Ce spectacle recrée l’ambiance débonnaire et joyeuse de l’univers de Luis Mariano qui avec beaucoup de tact et d’humour est toujours parvenu à faire rêver ses admiratrices qu’il adorait. <br><br>Livret et mise en scène: Emmanuel Marfoglia"
-            }, {
-                title: " Karine Dubernet dans CARABISTOUILLES",
-                image: "assets/images/show 38.jpg",
-                date: "13 Déc 2026- 18 Avr 2027",
-                time: "Dimanche-17:00",
-                Salle: "1",
-                price: "17.50 €",
-                duration: "90 minutes",
-                desc: "Campagnes électorales, affaires, corruption, promesses bidon… bienvenue au royaume des Carabistouilles ! Et si la démocratie n’était qu’un tour de passe-passe ?<br><br>Après Perlimpinpin, Karine Dubernet revient démonter, avec l’humour ravageur qu’on lui connaît, la plus grande illusion collective de notre temps : la démocratie. Des urnes à l’arnaque, des débats aux magouilles, elle décrypte le grand cirque électoral avec une jubilation contagieuse.<br>Des candidats plus lisses que leurs promesses, des partis sans partisans, des électeurs en PLS… bienvenue dans le plus grand numéro de prestidigitation politique !<br>Mais derrière la satire, une question : à quel moment le peuple a-t-il cessé de tenir la manette ?Entre personnages hauts en couleur et punchlines acérées, Karine Dubernet signe un seule-en-scène décapant où l’on rit jaune, bleu, rouge… et surtout très fort.<br><br>Auteurs : Karine Dubernet & Carole Greep<br>Mise en scène : Marc Pistolesi"
-            }, {
-                title: "Fouad Reeves dans Délicieuse Insolence",
-                image: "assets/images/show 39.jpeg",
-                date: "30 Mai 2026- 30 Mai 2026",
-                time: "Samedi-21:15",
-                Salle: "2",
-                price: "à partir de 12€",
-                duration: "-",
-                desc: "Et si on arrêtait de marcher sur des œufs pour recommencer à rire ?<br><br>Toi aussi t’as l’impression que ce monde ressemble de plus en plus à un meuble IKEA qu’on a monté dans le noir ? Il est bancal !<br><br>Fouad Reeves est un gentleman qui a un sérieux problème : il dit tout haut ce que vous n’osez même pas penser tout bas. Cet ancien trader repenti pose un regard aussi élégant qu’acide sur notre époque.<br><br>Avec un charme de crooner et une répartie de voyou, il passe tout à la moulinette : des premiers rendez-vous Tinder qui ressemblent à des entretiens d’embauche, aux parents (un peu trop) dévoués, jusqu’à ces nouveaux dogmes qui nous font perdre la tête.<br><br>Top 10 des meilleurs spectacles — Festival d’Avignon OFF.<br><br>Le Standup que les algorithmes auraient préféré censurer, Délicieuse Insolence, c’est le rendez-vous de ceux qui ont gardé leur sens critique et leur envie de liberté.<br><br>Entre autodérision féroce et improvisations électriques, Fouad nous rappelle qu’on peut encore rire de tout… à condition de le faire avec talent et élégance.<br><br>Venez tester votre premier degré… Vous pourriez bien le perdre en chemin ! (et ça fait un bien fou)."
-            }, {
-                title: "Karine Dubernet dans PERLIMPINPIN",
-                image: "assets/images/show 40.jpg",
-                date: "12 Avr 2026- 11 Oct 2026",
-                time: "Dimanche-17:00",
-                Salle: "1",
-                price: "17.50 €",
-                duration: "90 minutes",
-                desc: "Connue pour son humour incisif & audacieux, Karine Dubernet se rit des ficelles du pouvoir.<br><br>Avec son humour piquant et son audace réjouissante, Karine Dubernet est plus en forme que jamais dans « Perlimpinpin », une satire décapante qui dynamite avec élégance les travers de notre société. Politique, santé, écologie… tout y passe, avec une plume affûtée et une dose de malice irrésistible.<br><br>Sous ses allures de spectacle comique, « Perlimpinpin » est un miroir tendu à notre époque — subtil, intelligent, et surtout… hilarant.<br>Un seul mot d’ordre : rire de tout, mais avec style.<br><br>Auteurs : Karine Dubernet, Carole Greep, Stéphane Rose<br>Mise en scène : Marc Pistolesi"
-            }, {
-                title: "Radio Nova – La riposte",
-                image: "assets/images/show 41.jpeg",
-                date: "15 Sep 2025- 30 Mar 2026",
-                time: "Lundi-18:30",
-                Salle: "1",
-                price: "10€",
-                duration: "60 minutes",
-                desc: "Venez assister en live à La riposte, l’émission de Radio Nova qui démonte l’actualité à coups de punchlines acérées ! Sarcasmes, baffes médiatiques gratuites et démontages en règle sont au programme, orchestrés par Akim Omiri et sa bande.<br><br>Tous les lundis à 18h30. Nous vous recommandons d’arriver au moins 15 minutes avant le début de l’émission.<br><br>À retrouver en podcast et en vidéo sur la chaine YouTube de Radio Nova dès le mardi à 18h et à écouter sur Radio Nova tous les mercredis à 22h."
-            }, {
-                title: "LE LAC DES CYGNES",
-                image: "assets/images/show 42.jpg",
-                date: "17 Oct 2026- 24 Avr 2027",
-                time: "Samedi-11:00 Mercredi-11:00",
-                Salle: "1",
-                price: "23 euros",
-                duration: "90 min",
-                desc: "Ballet féerique pour les petits.<br><br>LE LAC DES CYGNES – UNE EXPÉRIENCE DE BALLET THÉÂTRAL<br><br>ENCHANTÉE POUR LES ENFANTS<br><br>Prêt à transformer la première expérience de ballet de votre enfant en un moment<br><br>inoubliable ? Le célèbre ballet Le Lac des cygnes se réinvente dans une version<br><br>spécialement conçue pour les enfants : ludique, poétique et interactive.<br><br>Porté par l’alliance magique de la danse, de la musique et de la narration, ce<br><br>spectacle invite les enfants à plonger au cœur de l’histoire et à laisser libre cours à<br><br>leur imagination.<br><br>Un spectacle à ne pas manquer !<br><br>* Accessible dès 2 ans<br><br>* Une narration claire et adaptée aux plus jeunes<br><br>* Durée idéale : 50 minutes<br><br>* Un rythme dynamique, parfaitement adapté à l’attention des enfants<br><br>* Une expérience interactive : les enfants participent et deviennent acteurs de<br><br>l’histoire<br><br>* Un univers visuel féerique avec de magnifiques costumes<br><br>* Les plus beaux extraits chorégraphiques du ballet accompagnés de la musique envoûtante de Pyotr Ilyich Tchaikovsky<br><br>* Une histoire à la fois drôle et touchante, avec un méchant revisité avec humour<br><br>* Un moment à partager en famille<br><br>Cette adaptation offre une première rencontre avec le ballet classique à la fois<br><br>accessible, vivante et pleine d’émotion.<br><br>Réservez dès maintenant et partagez en famille un moment magique dont vous vous<br><br>souviendrez longtemps.<br><br>Crédits :<br><br>Mise en scène : Çağdan Büyük"
-            }, {
-                title: "CASSE-NOISETTE ",
-                image: "assets/images/show 43.jpg",
-                date: "05 Déc 2026- 20 Fév 2027",
-                time: "Samedi-11:00 Mardi-11:00 Mercredi-11:00",
-                Salle: "1",
-                price: "23 euros",
-                duration: "90 min",
-                desc: "La magie de Noël pour les enfants.<br><br>Cette saison, Casse-Noisette sera présenté à Paris à travers 11 représentations exceptionnelles. Porté par une grande troupe de danseurs et de comédiens, ce spectacle mêle harmonieusement ballet et théâtre pour raconter l’histoire féerique de Casse-Noisette.<br><br>Conçu pour les enfants dès 2 ans, ce spectacle familial séduit également les adultes en proposant une expérience riche et accessible à tous les âges.<br><br>Joué à guichets fermés depuis trois saisons, il est vivement conseillé de réserver ses places avant le début de la saison.<br><br>Sur scène, danseurs et comédiens se réunissent pour offrir une performance vivante, immersive et pleine d’émotion.<br><br>Cette saison, découvrez l’univers magique de Casse-Noisette, enrichi de nouvelles danses et de surprises inédites.<br><br>Nous vous attendons avec impatience !<br><br>Crédits :<br><br>Mise en scène : Batuhan Baygın<br><br>Direction artistique : Çağdan Büyük<br><br>Comédiens et Danseurs : Chloé Barrier, Jean-Baptiste Braud, Léa Guérineau, Antoine Maabed, Blaise Jouhannaud, Jérémy Mekkaoui, Daniela Giannuzzi, Chiara Maurelli"
-            }, {
-                title: "Opéra Miaou",
-                image: "assets/images/show 44.jpg",
-                date: "03 Oct 2026- 03 Avr 2027",
-                time: "Samedi-11:00 Mercredi-11:00",
-                Salle: "1",
-                price: "23 euros",
-                duration: "90 min",
-                desc: "L’opéra devient un jeu pour les enfants<br><br>Ce spectacle enchanteur raconte l’histoire de trois chats malicieux qui, depuis leur plus jeune âge, partagent leurs aventures pleines d’humour. Grâce à leurs situations comiques et à des scènes interactives, ils captivent rapidement le cœur des enfants. Pourtant, un jour, insatisfaits de leur propriétaire, ils décident de s’enfuir.<br><br>Cette douce aventure se mêle à de célèbres mélodies d’opéra, offrant ainsi aux enfants une rencontre joyeuse avec cet univers. Les grands airs classiques prennent vie avec des paroles adaptées et accessibles, portés par ces chats espiègles.<br><br>Crédits :<br><br>Mise en scène : Batuhan Baygın<br><br>Direction artistique : Çağdan Büyük<br><br>Comédiens :<br><br>Chloé Barrier, Antoine Maabed, Jérémy Mekkaoui, Duru Arslan"
-            }, {
-                title: "TOC TOC",
-                image: "assets/images/show 45.jpg",
-                date: "02 Juil 2026- 29 Août 2026",
-                time: "Jeudi-19:30 Vendredi-19:30 Samedi-19:30 Dimanche-16:00",
-                Salle: "1",
-                price: "à partir de 19.50€",
-                duration: "-",
-                desc: "93 % des gens avouent avoir au moins un TOC… et vous ?<br><br>La comédie culte aux 3 millions de spectateurs revient pour 40 représentations exceptionnelles avec un casting 5 étoiles. <br><br>Avec la comédie de Laurent Baffie, entrez dans la salle d’attente la plus déjantée du théâtre !<br><br>Dans Toc Toc, six patients aux troubles obsessionnels compulsifs explosifs vont devoir cohabiter… sans médecin pour les canaliser. Résultat ? Une avalanche de situations absurdes, de manies incontrôlables et de répliques qui font mouche à chaque seconde.<br><br>Une comédie culte où le rire est roi, aussi hilarante que touchante, et où chaque éclat de rire révèle peu à peu les failles… et l’humanité de chacun.<br><br>👉 Vous pensiez être normal ? Venez vérifier… et préparez-vous à rire 😄<br><br>Auteur : Laurent Baffie<br><br>Artistes : Pascal Grégoire, Benjamin Baffie, Karine Kadi, Régis Lionti, Alice Derieux, Camille Roy en alternance avec Charlotte Lequesne.<br><br>Mise en scène : Pascal Grégoire"
-            },
+        }, {
+            title: "Le Fieald",
+            image: "assets/images/show 13.jpg",
+            date: "07 Sep 2025- 21 Juin 2026",
+            time: "Dimanche-20:30",
+            Salle: "Salle 1",
+            price: "à partir de 19.95€",
+            duration: "120 minutes",
+            desc: "Envie d’une soirée drôle, insolite et pleine de surprises ? Ne manquez pas le FIEALD, la plus folle scène ouverte de Paris ! Chaque dimanche à 20h30 dans le 9e arrondissement, un spectacle unique prend vie sous vos yeux…<br><br>Bien plus qu’un comedy club, le FIEALD offre depuis plus de 30 ans un tremplin aux talents émergents : humoristes, chanteurs, comédiens et artistes de tous horizons se succèdent pour vous surprendre, vous émouvoir et vous faire rire. Improvisation et créativité sont les maîtres-mots de cette soirée incontournable !<br><br>CE DIMANCHE 26 AVRIL, LE FIEALD RECOIT L’ACADÉMIE DE L’HUMOUR <br><br>Imaginez une scène ouverte aux artistes de toutes disciplines, sans audition… C’est l’histoire du FIEALD depuis 1991 !<brr><br>Six artistes sont sélectionnés au hasard, une troupe de doux-dingues écrit des sketchs inédits chaque semaine et le groupe de musique met le feu aux planches du théâtre en live.<br><br>Humour, musique, magie, burlesque… On voit de tout et c’est différent chaque dimanche. N’hésitez plus ! Cette semaine, pour sa 1342e édition, le Fieald accueille Jo Brami et Samia Orosemane !<br><br>À savoir : Spectacle déconseillé aux moins de 14 ans.<br><br>LE FIEALD : UNE PÉPINIÈRE DE TALENTS Depuis sa création en 1991, le FIEALD a vu défiler de nombreux artistes devenus aujourd’hui des incontournables de la scène artistique française. Parmi eux, on retrouve notamment Dany Boon, Florence Foresti, Aymeric Lompret, Jamel Debbouze, Shirley Souagnon, Kyan Khojandi, Tania Dutel ou Constance.<br><br>Outre les humoristes, de nombreux chanteurs ont aussi foulé les planches du FIEALD, comme les Franglaises, les Wriggles, les Triwap et même Bigflo et Oli !"
+        }, {
+            title: "WILLEM FAIT LE COMIQUE",
+            image: "assets/images/show 14.png",
+            date: "25 Fév 2026- 27 Mai 2026",
+            time: "Mercredi-19:30 Mercredi-21:15",
+            Salle: "1",
+            price: "24 euros",
+            duration: "80 min",
+            desc: "Un premier spectacle généreux et profondément personnel.<br><br> Dans « Willem fait le comique », l’humoriste se livre avec sincérité et autodérision à travers des anecdotes de vie, des observations savoureuses sur la société, et des sketchs hilarants qui explorent nos contradictions. Dresscode: VERT."
+        }, {
+            title: "Délivrez-nous du mâle",
+            image: "assets/images/show 15.jpg",
+            date: "17 Fév 2026- 28 Avr 2026",
+            time: "Mardi-21:15",
+            Salle: "2",
+            price: "17,50 €",
+            duration: "90 min",
+            desc: "On a fait la bringue dans un monastère hier ? J’ai un moine dans mon canapé !<br>Une délirante et irrévérencieuse comédie dans un authentique dérapage théâtral<br><br>Lola dirige une armée de financiers à la testostérone épanouie. Elle est sexy, célibataire et… compliquée. Au lendemain d’une bringue « de compétition », Lola trouve un moine, Frère Félicien, dans son canapé… Là, Lola se demande si elle n’aurait quand même pas loupé un virage… Et lorsque Dieu décide de s’en mêler… Il n’y a plus de doute : elle est sûre d’avoir dérapé ! Elle est loin, très loin, d’être au bout de ses surprises. Et Frère Félicien aussi d’ailleurs !<br><br>Crédits:<br><br>Comédiens : Claire HOFFMANN & Fabien CECCHINI<br><br>avec la voix de Chantal LADESOU<br><br>Auteur : Antoine BEAUVILLE<br><br>Mise en scène : Carole BARBIER<br><br>Compagnie ValEMarts produite par Bleu Blanc Ciel"
+        }, {
+            title: "Nadège 100 Gêne dans Puzzle",
+            image: "assets/images/show 16.jpeg",
+            date: "17 Avr 2026- 29 Mai 2026",
+            time: "Vendredi-21:15",
+            Salle: "2",
+            price: "24 euros",
+            duration: "70 min",
+            desc: "Puzzle est le premier spectacle solo de Nadège, offrant une exploration intime de son parcours en tant que femme, fille d’immigrés et citoyenne du monde.<br><br>Le spectacle, mêlant anecdotes personnelles et réflexions profondes, aborde des thèmes tels que la maternité, le burnout, la charge mentale, et les défis d’être une femme aujourd’hui. Avec humour et émotion, Nadège construit un récit qui invite le public à rire, réfléchir et ressentir.<b><br>Chaque histoire dévoile une pièce de son puzzle de vie, offrant une perspective sur sa propre existence et celle des spectateurs."
+        }, {
+            title: "Le Prix Copeau 2026",
+            image: "assets/images/show 17.jpg",
+            date: "22 Juin 2026- 22 Juin 2026",
+            time: "Lundi-20:00",
+            Salle: "1",
+            price: "À partir de 5€",
+            duration: "90 min",
+            desc: "Une soirée unique où les élèves de notre école se confrontent au regard d’un jury présidé par Michel Fau.<br><br>Le Prix Copeau 2026 marque l’aboutissement de l’année de formation professionnelle de l’acteur du Foyer, école de théâtre à Paris. Lors de cette représentation publique, les élèves présentent sur scène le fruit de leur travail devant un jury de professionnels du spectacle vivant, présidé par Michel Fau, comédien et metteur en scène. Cette soirée emblématique permet aux jeunes acteurs de se confronter aux conditions du plateau professionnel et au regard du public, dans un moment artistique qui vient conclure leur parcours de formation.<br><br>Crédits :<br><br>Avec : Les élèves de la Formation professionnelle de l’acteur — promotion 2025/2026<br><br>Présidé par : Michel Fau<br><br>Production : Le Foyer — Cours d’Art Dramatique"
+        }, {
+            title: "Wary Nichen en arabe",
+            image: "assets/images/show 18.jpg",
+            date: "30 Mai 2026- 05 Juil 2026",
+            time: "Samedi-16:30 Dimanche-16:30",
+            Salle: "2",
+            price: "25 euros",
+            duration: "60 min",
+            desc: "Un conte de stand up raconté par un dz citoyen du monde en arabe darija<br><br>S’il t’arrive de glisser les mots « Labes », « amdoulah » et « inchalah » dans une discussion entre potes, ce message n’est pas pour toi. Par contre, si tu as déjà mangé du « chikoula », regardé un moussalssal sans saigner du nez ou si tu connais qui est Grindaizar, l’Inspecteur Tahar, Fairouz, Adel Imam, Sinan, Joumarou, Labiba, Captin Majed ou si tu reconnais les refrains de Cheb Hasni, le show est pour toi.<br><br>Crédits : <br>Wary Nichen"
+        }, {
+            title: "Thomas Barbazan : On l’appelait DJ Chelou",
+            image: "assets/images/show 19.png",
+            date: "18 Juin 2026- 18 Juin 2026",
+            time: "Jeudi-19:30",
+            Salle: "1",
+            price: "20.50€",
+            duration: "1h10",
+            desc: "Le parodieur le plus golri de l’Ouest est de retour dans le secteur pour un spectacle inédit.<br><br>Thomas Barbazan a conquis le public avec ses parodies sous le nom de DJ Chelou. <br><br>Âge conseillé :  <br>À partir de 12 ans."
+        }, {
+            title: "ZAC BULLE – Spectacle en bricolage",
+            image: "assets/images/show 20.png",
+            date: "07 Mai 2026- 07 Mai 2026",
+            time: "Jeudi-19:30",
+            Salle: "1",
+            price: "25€",
+            duration: "1h15",
+            desc: "Quand Zac Bulle (de son vrai nom Zachary Allard) commence à partager de courts films cocasses sur le web alors qu’il n’a que neuf ans, il est loin de se douter que l’humour allait devenir son art de prédilection et un synonyme de succès.<br><br>Influencé par les propositions décalées des Denis Drolet et des Appendices, mais aussi plus récemment, du style sans compromis de Jean-Michel Martel et Maxime Gervais, Zac Bulle se distingue par sa maîtrise de l’absurde, incarnée avec brio à travers son personnage iconique, faussement juvénile, de petit garçon gêné et malaisant.<br><br>D’un côté, ses vidéos youtube lui permettent de se faire remarquer sur la scène québécoise et de rassembler plus de 50 000 fans. De l’autre, des plateformes où domine des clips plus courts et punchés – tel qu’Instagram et TikTok – lui servent à dilater la rate à plus de 1.3 millions abonnés grâce à du contenu livré avec constance et dévouement. Impressionnant qu’en parallèle à sa carrière foisonnante, l’infatigable Zac ait récolté un diplôme en animation 3D, talent qu’il met à profit à même ses créations hallucinogènes.<br><br>On le compte désormais parmi les rangs de la réputée Agence Lol Lol Lol, plus prêt que jamais à partager avec la planète sa passion sans fond pour la mayonnaise."
+        }, {
+            title: "Le spectacle américain des Blues Brothers par The Real Eight Killers",
+            image: "assets/images/show 21.png",
+            date: "16 Oct 2025- 11 Juin 2026",
+            time: "Jeudi-21:15",
+            Salle: "1",
+            price: "30€",
+            duration: "80 min",
+            desc: "La suite du film « The Blues Brothers » en live, plus Rock, Blues, Burlesque. Une mise en scène déjantée avec des guitares cassées, des tirs aux pistolets, de Everybody Needs à Carmen de Bizet. Le tout exécuté par des musiciens chanteurs qui ont joué notamment avec BB King, Chuck Berry, Prince…<br><br>Après avoir foulé les plus grandes scènes (l’Olympia, les Zéniths, les plus grandes scènes européennes jusqu’au Mexique et au Canada), les Eight Killers reçoivent le trophée d’or du meilleur concert live de l’année."
+        }, {
+            title: "Concours GOAT des comédiens – Saison 4",
+            image: "assets/images/500.jpg",
+            date: "13 Juin 2026- 13 Juin 2026",
+            time: "Samedi-20:00",
+            Salle: "1",
+            price: "23€",
+            duration: "120 minutes",
+            desc: "Créez le personnage de vos rêves, écrivez son histoire et donnez-lui vie sur scène.<br><br>Le Concours GOAT des comédiens est une compétition artistique unique qui se déroule à travers une phase de sélection organisée dans 5 villes en France. À l’issue de ce parcours, 10 finalistes sont retenus et bénéficient d’un accompagnement par des coachs professionnels afin de préparer la grande finale, qui se tiendra au théâtre La Scène Parisienne.<br>Répartis en deux catégories, théâtre et cinéma, les candidats présentent sur scène leur personnage à travers différentes épreuves, devant un jury de professionnels, un public ainsi que les coachs.<br>Au-delà du concours, la finale est pensée comme un véritable show immersif, porté par une mise en scène dynamique et une scénographie travaillée, offrant au public une expérience complète. L’événement constitue également un tremplin, avec des récompenses concrètes visant à accompagner le développement artistique et professionnel des participants.<br><br>Production : GOAT des comédiens<br>Fondateur / Présentateur : Yann Fricker<br>Direction artistique : Wilfried Gonon<br>Coordination : Camille Vassard Blum<br>Technique : Flora / Almeric / Laurie"
+        }, {
+            title: "ARLETTY, UN CŒUR TRÈS OCCUPÉ",
+            image: "assets/images/show 23.jpg",
+            date: "08 Jan 2026- 27 Avr 2026",
+            time: "Mardi-19:30 Jeudi-19:30 Vendredi-21:00 Dimanche-16:30",
+            Salle: "2",
+            price: "32",
+            duration: "90 minutes",
+            desc: "Arletty comme vous ne l’avez jamais vu ! Grâce à une correspondance foisonnante et inédite, venez découvrir cette femme touchante et bouleversante qui assumera son amour controversé pour un officier allemand. <br><br>Assistez à une formidable joute pleine de tendresse et d’humour entre deux générations pour démontrer, à travers cette passion interdite, que l’amour est sans frontière !<br><br>Avec Béatrice Costantini et François Nambot <br><br>Auteur : Jean-Luc Voulfow <br><br>Mise en scène : François Nambot <br><br>Lumières : Jacques Rouveyrollis <br><br>Extraits Médias<br>--------------<br><br>« Magnifique face-à-face » MAXI<br><br>« Exceptionnelle interprétation » LE FIGARO<br><br>« Un huit clos passionnant » PUBLIC<br><br>« Très belle pièce » LE PARISIEN<br><br>« Étonnante, incroyable » T18<br><br>« Magnifiquement interprété » ICI TV"
+        }, {
+            title: "NOTRE CHER AUTEUR",
+            image: "assets/images/show 24.jpg",
+            date: "20 Jan 2026- 28 Avr 2026",
+            time: "Mardi-19:30",
+            Salle: "2",
+            price: "27,50 €",
+            duration: "-",
+            desc: "Comment transformer une tragédie en comédie sans que l’auteur s’en rende compte ? Serge est à la recherche d’une pièce à mettre en scène et à jouer avec Mathilde, dont il est follement amoureux.<br><br>Il obtient d’Anton, un dramaturge renommé mais réticent suite à plusieurs expériences malheureuses, sa dernière pièce intitulée un peu sombrement « Fin d’Automne » – à la seule condition de n’y rien changer.<br><br>Mais c’est sans compter Mathilde, qui a une toute autre vision des choses…<br><br>La joyeuse métamorphose d’une tragédie en comédie – ou les tribulations d’un auteur sérieux, pris malgré lui dans le tourbillon d’une danse totalement inattendue.<br><br>Crédits :<br>-------------<br><br>Auteur : Ana-Maria Bamberger<br><br>Metteur en scène : Jean-Philippe Azéma<br><br>Avec : Marie-Hélène Lentini, Jean-Philippe Azéma, François Legrand, François Nambot<br><br>Production : Magus Théâtre Productions & Mes Potes et Moi"
+        }, {
+            title: "La vieille",
+            image: "assets/images/show 25.png",
+            date: "22 Mar 2026- 24 Juin 2026",
+            time: "Dimanche-19:30 Mardi-19:30 Mercredi-19:30 Jeudi-19:30",
+            Salle: "2",
+            price: "à partir de 19€",
+            duration: "75 MINUTES",
+            desc: "Et si le mort n’était pas tout à fait mort ?<br><br>Une étrange vieille se rend à l’appartement du personnage principal. À peine entrée, voilà qu’elle meurt. Mais son décès n’est pas définitif : la vieille morte se déplace dans la pièce et se montre même agressive. Les tentatives du héros pour se débarrasser du corps, en l’emportant en dehors de la ville dans une valise et en l’immergeant dans un marécage, se soldent par un fiasco tragique-comique : la valise est volée.<br><br>Mise en scène : Maria de Valukhoff<br><br>Mouvement :  Aurore Borgo<br><br>Arrangements, piano : Natalia Skvortsova<br><br>Design et graphisme : Igor Gourovitch<br><br><br>À partir de 12 ans"
+        }, {
+            title: "BODYCOUNT",
+            image: "assets/images/show 26.jpg",
+            date: "04 Avr 2026- 25 Avr 2026",
+            time: "Samedi-19:30",
+            Salle: "2",
+            price: "22.50€",
+            duration: "-",
+            desc: "LA COMÉDIE QUI COMPTE…<br><br>Alex est un romantique convaincu, Sabrina et Sébastien, ses amis, sont tout le contraire : libérés, explosifs et imprévisibles. Quand il rencontre Julia, sa voisine, c’est l’évidence. Mais lorsque les quatre se retrouvent autour d’un dîner, le passé refait surface… et tout dérape !<br><br>Auteur : Jean-Philippe Mayer<br>Metteuse en scène : Sandra Lovisa,<br>Production : Jean-Philippe Mayer Productions.<br><br><br>Âge conseillé : <br>À partir de 16 ans"
+        }, {
+            title: "À Contretemps",
+            image: "assets/images/show 27.png",
+            date: "11 Avr 2026- 22 Avr 2026",
+            time: "Lundi-21:15 Mardi-19:00 Mercredi-21:15 Samedi-16:30",
+            Salle: "1",
+            price: "15",
+            duration: "90 min",
+            desc: "2050. Le voyage temporel existe enfin … Mais seulement pour les plus privilégiés. Une Brigade Inter Temporelle veille au grain en réparant les anomalies de la ligne chronologique provoquées par les négligences des touristes temporels. Mais si ces incidents n’étaient pas que des erreurs isolées ? Et si quelqu’un souhaitait faire dérailler le cours du temps ? La Brigade Inter Temporelle réussira-t-elle à préserver l’humanité ?"
+        }, {
+            title: "Frédéric Bukolé dans Épopée",
+            image: "assets/images/show 28.jpg",
+            date: "31 Jan 2026- 27 Juin 2026",
+            time: "Samedi-19:30 Samedi-21:15",
+            Salle: "2",
+            price: "À partir de",
+            duration: "60 min",
+            desc: "Épopée, la célébration de la résilience et de l’humour qui transforme chaque épreuve en une aventure mémorable.<br><br>C’est au travers de son spectacle « Épopée » que Frédéric Bukolé vous invite à découvrir sa quête du bonheur. Il raconte son propre voyage : celui d’un petit garçon quittant une petite ville de la République Démocratique du Congo à l’âge de 10 ans, persuadé que l’Europe lui apporterait le bonheur.<br><br>À travers un récit captivant et empreint d’humour, Frédéric transforme les défis de sa vie en anecdotes à la fois émouvantes et hilarantes. Il partage ses expériences d’adaptation culturelle, ses mésaventures et ses triomphes personnels, dévoilant la richesse et la diversité de son parcours."
+        }, {
+            title: "Grand temps",
+            image: "assets/images/show 29.jpg",
+            date: "27 Nov 2025- 04 Juin 2026",
+            time: "Jeudi-07:30",
+            Salle: "1",
+            price: "35 €",
+            duration: "75",
+            desc: "Avec son humour tranchant et son franc-parler, Coco Makmak décortique les contradictions culturelles dans un one-woman show explosif. Big Time fait rire, dérange et questionne, en disant tout haut ce que l’on pense tout bas.<br><br>Big Time c’est 1h15 d’humour sans filtre signé Coco Makmak. Entre tabous familiaux, mariages mixtes et chocs culturels, elle transforme les contradictions en rires contagieux. Un spectacle drôle mais piquant."
+        }, {
+            title: "Les Années Folles",
+            image: "assets/images/show 30.png",
+            date: "02 Avr 2026- 07 Mai 2026",
+            time: "Jeudi-15:00",
+            Salle: "1",
+            price: "30,80€",
+            duration: "90 min",
+            desc: "Dans la vie faut pas s’en faire! » Avec Maurice Chevalier, Charles Trenet et Arletty, « il y a toujours de la joie!<br><br>Dans la Vie faut pas s’en faire, Un baiser, La Mer… venez chanter avec Maurice Chevalier, Arletty et Charles Trenet le temps d’un intermède de music-hall et retrouvez cette période de fête perpétuelle.<br>De Pas sur la Bouche de Maurice Yvain en passant par les refrains célèbres de Paris sera toujours Paris à J’aime le music-hall.… dans ce spectacle: Y’a d’la joie!<br>– Livret et mise en scène d’Emmanuel Marfoglia- Avec Philippe Padovani, Thomas Marfoglia, Ariane-Olympe Girard et Leo Debono au piano"
+        }, {
+            title: "JE SUIS LA FEMME ",
+            image: "assets/images/show 31.jpg",
+            date: "10 Juin 2026- 10 Juin 2026",
+            time: "Mercredi-19:30",
+            Salle: "2",
+            price: "à partir de 12.50€",
+            duration: "70 minutes",
+            desc: "JE SUIS LA FEMME – L’Éveil d’une Humanité Sensible<br><br>« Et si votre plus grande force était votre vulnérabilité ? »<br><br>Bien plus qu’un spectacle, Je suis la femme est une épopée de l’âme. Porté par la voix vibrante d’Abad, « Le Prince des Poètes », ce voyage immersif utilise la figure de la femme comme le miroir de notre propre sensibilité.<br><br>Dans une mise en scène épurée et monumentale, les mots s’entrelacent aux chefs-d’œuvre cinématographiques de Hans Zimmer, Ryuichi Sakamoto, Chopin et Beethoven. Entre poésie brute et animations vidéo envoûtantes, laissez-vous emporter par cette traversée sensorielle unique. Une réconciliation nécessaire avec notre part d’invisible.<br><br>Venez vivre l’instant où le souffle devient texte et où la faille devient lumière<br><br>Auteur : Abad Boumsong <br><br>Direction artistique : Princesse Paillettes <br><br><br>Spectacle à partir de 7 ans"
+        },
+        // {
+        //     title: "Денис Чужой в Париже",
+        //     image: "assets/images/show 32.png",
+        //     date: "Feb - May 2026",
+        //     time: "19:00",
+        //     price: "20€",
+        //     duration: "80 min",
+        //     desc: "Comedy theatrical show."
+        // },
+        // , {
+        //     title: "SARAH DONNA: LE VOYAGE EN-CHANTANT, SAISON 2",
+        //     image: "assets/images/show 33.jpg",
+        //     date: "Feb - May 2026",
+        //     time: "19:00",
+        //     price: "20€",
+        //     duration: "80 min",
+        //     desc: "Comedy theatrical show."
+        // }, 
+        {
+            title: "NABIL KOLLEB dans Tounsi W Nos",
+            image: "assets/images/show 34.jpg",
+            date: "25 Avr 2026- 25 Avr 2026",
+            time: "Samedi-21:15",
+            Salle: "1",
+            price: "31,30€",
+            duration: "75 min",
+            desc: "Dans son spectacle, Nabil remarque que son quotidien est bizarre, pourtant il a un job, une famille, des enfants, mais réellement rien ne va.<br><br>Il creuse alors dans ses souvenirs d’enfance, son entourage et même dans l’histoire du pays pour finalement comprendre que le vrai problème c’est lui.<br>Et là, il doit choisir entre le malheur de garder ses principes ou le bonheur de suivre la foule."
+        }, {
+            title: "Carte blanche à Fanny Delaigue",
+            image: "assets/images/show 35.png",
+            date: "04 Mai 2026- 04 Mai 2026",
+            time: "Lundi-21:15",
+            Salle: "1",
+            price: "à partir de 29€",
+            duration: "2H",
+            desc: "Fanny Delaigue, de la comédie musicale à la pop : une soirée 100 % live<br><br>De la comédie musicale à la Star Academy, Fanny et ses musiciens retracent des moments marquants dans des versions 100% Live et des arrangements inédits qui vous feront redécouvrir les chansons.De Grease à Holidays (avec les titres de Madonna), en passant par Resiste avec France Gall, aux moments mémorables de la Star Academy saisons 2024 et 2025, les titres qui vous ont fait danser, ceux qui vous ont émus, Charlotte Cardin, Hoshi, Raye…<br><br>Passez une soirée ponctuée de nostalgie, de tubes que vous pourrez chanter à tue-tête, et surtout de partage en Live.<br><br>Auteure : Danièle Adad<br><br>Ouverture : Il est toujours temps, les chansons du musical<br><br>Compositrice : Fanny Delaigue<br><br>Interprètes : Danaelle, Élisa Prévand-Cohen, Stanislas Clément, Lucie Mantez, Pierre-Louis Giffon<br><br>Musiciens :<br><br>Batterie : Pascal Bihannic<br><br>Clavier : Cyril Broque<br><br>Guitares : Sebastien Klatt<br><br>Concert :<br><br>Chant : Fanny Delaigue<br><br>Musiciens :<br><br>Batterie : Corto Vermee<br><br>Clavier : Mickaël Randrianasolo<br><br>Basse : Julien Droz-Vincent<br><br>Guitares : Ivan Quintero<br><br>Production : N1portekoi Productions et Baralatatabaliba Compagnie<br><br><br>Spectacle à partir de 12 ans"
+        }, {
+            title: "Concert du groupe Tazenda",
+            image: "assets/images/show 36.jpg",
+            date: "20 Mai 2026- 20 Mai 2026",
+            time: "Mercredi-20:00",
+            Salle: "1",
+            price: "à partir de 18€",
+            duration: "-",
+            desc: "Gino Marielli   guitare et voix  Gigi Camedda   piano et voix Serena Carta Mantiglia   voix soliste et clavier   Massimo Cossu   guitares<br><br>Le groupe ethno-pop-rock historique qui a fait connaître la chanson en langue sarde au-delà des frontières de l’île, remportant un grand succès et une vive appréciation dans toute l’Italie et au-delà, chantant également en italien, sera pour la première fois en concert à Paris.<br>Déjà réunis au sein du « Coro degli Angeli », Gigi Camedda, Gino Marielli et Andrea Parodi ont fondé le groupe Tazenda en 1988. Après le départ de ce dernier, qui en était le légendaire chanteur soliste, le groupe a poursuivi depuis 1997 jusqu’à aujourd’hui un parcours artistique de grande valeur, avec différentes formations et de nombreux albums et concerts. Il compte actuellement parmi ses membres l’excellente chanteuse soliste Serena Carta Mantiglia.  La soirée s’ouvrira avec Pepemauro, auteur-compositeur-interprète et comédien italien originaire de Calabre résidant à Paris, qui interprétera des chansons originales issues de son répertoire."
+        }, {
+            title: "le Sourire de Luis: hommage à Luis Mariano",
+            image: "assets/images/show 37.png",
+            date: "26 Mai 2026- 04 Juin 2026",
+            time: "Mardi-15:00 Jeudi-15:00",
+            Salle: "1",
+            price: "à partir de 39€",
+            duration: "-",
+            desc: "De La Belle de Cadix au Chanteur de Mexico, venez revivre les grands moments de cet immense artiste qu’était Luis Mariano.<br><br>Ce spectacle recrée l’ambiance débonnaire et joyeuse de l’univers de Luis Mariano qui avec beaucoup de tact et d’humour est toujours parvenu à faire rêver ses admiratrices qu’il adorait. <br><br>Livret et mise en scène: Emmanuel Marfoglia"
+        }, {
+            title: " Karine Dubernet dans CARABISTOUILLES",
+            image: "assets/images/show 38.jpg",
+            date: "13 Déc 2026- 18 Avr 2027",
+            time: "Dimanche-17:00",
+            Salle: "1",
+            price: "17.50 €",
+            duration: "90 minutes",
+            desc: "Campagnes électorales, affaires, corruption, promesses bidon… bienvenue au royaume des Carabistouilles ! Et si la démocratie n’était qu’un tour de passe-passe ?<br><br>Après Perlimpinpin, Karine Dubernet revient démonter, avec l’humour ravageur qu’on lui connaît, la plus grande illusion collective de notre temps : la démocratie. Des urnes à l’arnaque, des débats aux magouilles, elle décrypte le grand cirque électoral avec une jubilation contagieuse.<br>Des candidats plus lisses que leurs promesses, des partis sans partisans, des électeurs en PLS… bienvenue dans le plus grand numéro de prestidigitation politique !<br>Mais derrière la satire, une question : à quel moment le peuple a-t-il cessé de tenir la manette ?Entre personnages hauts en couleur et punchlines acérées, Karine Dubernet signe un seule-en-scène décapant où l’on rit jaune, bleu, rouge… et surtout très fort.<br><br>Auteurs : Karine Dubernet & Carole Greep<br>Mise en scène : Marc Pistolesi"
+        }, {
+            title: "Fouad Reeves dans Délicieuse Insolence",
+            image: "assets/images/show 39.jpeg",
+            date: "30 Mai 2026- 30 Mai 2026",
+            time: "Samedi-21:15",
+            Salle: "2",
+            price: "à partir de 12€",
+            duration: "-",
+            desc: "Et si on arrêtait de marcher sur des œufs pour recommencer à rire ?<br><br>Toi aussi t’as l’impression que ce monde ressemble de plus en plus à un meuble IKEA qu’on a monté dans le noir ? Il est bancal !<br><br>Fouad Reeves est un gentleman qui a un sérieux problème : il dit tout haut ce que vous n’osez même pas penser tout bas. Cet ancien trader repenti pose un regard aussi élégant qu’acide sur notre époque.<br><br>Avec un charme de crooner et une répartie de voyou, il passe tout à la moulinette : des premiers rendez-vous Tinder qui ressemblent à des entretiens d’embauche, aux parents (un peu trop) dévoués, jusqu’à ces nouveaux dogmes qui nous font perdre la tête.<br><br>Top 10 des meilleurs spectacles — Festival d’Avignon OFF.<br><br>Le Standup que les algorithmes auraient préféré censurer, Délicieuse Insolence, c’est le rendez-vous de ceux qui ont gardé leur sens critique et leur envie de liberté.<br><br>Entre autodérision féroce et improvisations électriques, Fouad nous rappelle qu’on peut encore rire de tout… à condition de le faire avec talent et élégance.<br><br>Venez tester votre premier degré… Vous pourriez bien le perdre en chemin ! (et ça fait un bien fou)."
+        }, {
+            title: "Karine Dubernet dans PERLIMPINPIN",
+            image: "assets/images/show 40.jpg",
+            date: "12 Avr 2026- 11 Oct 2026",
+            time: "Dimanche-17:00",
+            Salle: "1",
+            price: "17.50 €",
+            duration: "90 minutes",
+            desc: "Connue pour son humour incisif & audacieux, Karine Dubernet se rit des ficelles du pouvoir.<br><br>Avec son humour piquant et son audace réjouissante, Karine Dubernet est plus en forme que jamais dans « Perlimpinpin », une satire décapante qui dynamite avec élégance les travers de notre société. Politique, santé, écologie… tout y passe, avec une plume affûtée et une dose de malice irrésistible.<br><br>Sous ses allures de spectacle comique, « Perlimpinpin » est un miroir tendu à notre époque — subtil, intelligent, et surtout… hilarant.<br>Un seul mot d’ordre : rire de tout, mais avec style.<br><br>Auteurs : Karine Dubernet, Carole Greep, Stéphane Rose<br>Mise en scène : Marc Pistolesi"
+        }, {
+            title: "Radio Nova – La riposte",
+            image: "assets/images/show 41.jpeg",
+            date: "15 Sep 2025- 30 Mar 2026",
+            time: "Lundi-18:30",
+            Salle: "1",
+            price: "10€",
+            duration: "60 minutes",
+            desc: "Venez assister en live à La riposte, l’émission de Radio Nova qui démonte l’actualité à coups de punchlines acérées ! Sarcasmes, baffes médiatiques gratuites et démontages en règle sont au programme, orchestrés par Akim Omiri et sa bande.<br><br>Tous les lundis à 18h30. Nous vous recommandons d’arriver au moins 15 minutes avant le début de l’émission.<br><br>À retrouver en podcast et en vidéo sur la chaine YouTube de Radio Nova dès le mardi à 18h et à écouter sur Radio Nova tous les mercredis à 22h."
+        }, {
+            title: "LE LAC DES CYGNES",
+            image: "assets/images/show 42.jpg",
+            date: "17 Oct 2026- 24 Avr 2027",
+            time: "Samedi-11:00 Mercredi-11:00",
+            Salle: "1",
+            price: "23 euros",
+            duration: "90 min",
+            desc: "Ballet féerique pour les petits.<br><br>LE LAC DES CYGNES – UNE EXPÉRIENCE DE BALLET THÉÂTRAL<br><br>ENCHANTÉE POUR LES ENFANTS<br><br>Prêt à transformer la première expérience de ballet de votre enfant en un moment<br><br>inoubliable ? Le célèbre ballet Le Lac des cygnes se réinvente dans une version<br><br>spécialement conçue pour les enfants : ludique, poétique et interactive.<br><br>Porté par l’alliance magique de la danse, de la musique et de la narration, ce<br><br>spectacle invite les enfants à plonger au cœur de l’histoire et à laisser libre cours à<br><br>leur imagination.<br><br>Un spectacle à ne pas manquer !<br><br>* Accessible dès 2 ans<br><br>* Une narration claire et adaptée aux plus jeunes<br><br>* Durée idéale : 50 minutes<br><br>* Un rythme dynamique, parfaitement adapté à l’attention des enfants<br><br>* Une expérience interactive : les enfants participent et deviennent acteurs de<br><br>l’histoire<br><br>* Un univers visuel féerique avec de magnifiques costumes<br><br>* Les plus beaux extraits chorégraphiques du ballet accompagnés de la musique envoûtante de Pyotr Ilyich Tchaikovsky<br><br>* Une histoire à la fois drôle et touchante, avec un méchant revisité avec humour<br><br>* Un moment à partager en famille<br><br>Cette adaptation offre une première rencontre avec le ballet classique à la fois<br><br>accessible, vivante et pleine d’émotion.<br><br>Réservez dès maintenant et partagez en famille un moment magique dont vous vous<br><br>souviendrez longtemps.<br><br>Crédits :<br><br>Mise en scène : Çağdan Büyük"
+        }, {
+            title: "CASSE-NOISETTE ",
+            image: "assets/images/show 43.jpg",
+            date: "05 Déc 2026- 20 Fév 2027",
+            time: "Samedi-11:00 Mardi-11:00 Mercredi-11:00",
+            Salle: "1",
+            price: "23 euros",
+            duration: "90 min",
+            desc: "La magie de Noël pour les enfants.<br><br>Cette saison, Casse-Noisette sera présenté à Paris à travers 11 représentations exceptionnelles. Porté par une grande troupe de danseurs et de comédiens, ce spectacle mêle harmonieusement ballet et théâtre pour raconter l’histoire féerique de Casse-Noisette.<br><br>Conçu pour les enfants dès 2 ans, ce spectacle familial séduit également les adultes en proposant une expérience riche et accessible à tous les âges.<br><br>Joué à guichets fermés depuis trois saisons, il est vivement conseillé de réserver ses places avant le début de la saison.<br><br>Sur scène, danseurs et comédiens se réunissent pour offrir une performance vivante, immersive et pleine d’émotion.<br><br>Cette saison, découvrez l’univers magique de Casse-Noisette, enrichi de nouvelles danses et de surprises inédites.<br><br>Nous vous attendons avec impatience !<br><br>Crédits :<br><br>Mise en scène : Batuhan Baygın<br><br>Direction artistique : Çağdan Büyük<br><br>Comédiens et Danseurs : Chloé Barrier, Jean-Baptiste Braud, Léa Guérineau, Antoine Maabed, Blaise Jouhannaud, Jérémy Mekkaoui, Daniela Giannuzzi, Chiara Maurelli"
+        }, {
+            title: "Opéra Miaou",
+            image: "assets/images/show 44.jpg",
+            date: "03 Oct 2026- 03 Avr 2027",
+            time: "Samedi-11:00 Mercredi-11:00",
+            Salle: "1",
+            price: "23 euros",
+            duration: "90 min",
+            desc: "L’opéra devient un jeu pour les enfants<br><br>Ce spectacle enchanteur raconte l’histoire de trois chats malicieux qui, depuis leur plus jeune âge, partagent leurs aventures pleines d’humour. Grâce à leurs situations comiques et à des scènes interactives, ils captivent rapidement le cœur des enfants. Pourtant, un jour, insatisfaits de leur propriétaire, ils décident de s’enfuir.<br><br>Cette douce aventure se mêle à de célèbres mélodies d’opéra, offrant ainsi aux enfants une rencontre joyeuse avec cet univers. Les grands airs classiques prennent vie avec des paroles adaptées et accessibles, portés par ces chats espiègles.<br><br>Crédits :<br><br>Mise en scène : Batuhan Baygın<br><br>Direction artistique : Çağdan Büyük<br><br>Comédiens :<br><br>Chloé Barrier, Antoine Maabed, Jérémy Mekkaoui, Duru Arslan"
+        }, {
+            title: "TOC TOC",
+            image: "assets/images/show 45.jpg",
+            date: "02 Juil 2026- 29 Août 2026",
+            time: "Jeudi-19:30 Vendredi-19:30 Samedi-19:30 Dimanche-16:00",
+            Salle: "1",
+            price: "à partir de 19.50€",
+            duration: "-",
+            desc: "93 % des gens avouent avoir au moins un TOC… et vous ?<br><br>La comédie culte aux 3 millions de spectateurs revient pour 40 représentations exceptionnelles avec un casting 5 étoiles. <br><br>Avec la comédie de Laurent Baffie, entrez dans la salle d’attente la plus déjantée du théâtre !<br><br>Dans Toc Toc, six patients aux troubles obsessionnels compulsifs explosifs vont devoir cohabiter… sans médecin pour les canaliser. Résultat ? Une avalanche de situations absurdes, de manies incontrôlables et de répliques qui font mouche à chaque seconde.<br><br>Une comédie culte où le rire est roi, aussi hilarante que touchante, et où chaque éclat de rire révèle peu à peu les failles… et l’humanité de chacun.<br><br>👉 Vous pensiez être normal ? Venez vérifier… et préparez-vous à rire 😄<br><br>Auteur : Laurent Baffie<br><br>Artistes : Pascal Grégoire, Benjamin Baffie, Karine Kadi, Régis Lionti, Alice Derieux, Camille Roy en alternance avec Charlotte Lequesne.<br><br>Mise en scène : Pascal Grégoire"
+        },
 
 
         ];

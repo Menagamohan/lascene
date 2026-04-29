@@ -15,14 +15,13 @@
     <!-- HEADER -->
     <header class="header">
         <div class="logo"><img src="assets/images/logo.webp" alt="" style="width: 130px; height: 70px;"></div>
-
         <nav class="nav">
-            <a href="index.html">Welcome</a>
-            <a href="show.html">Shows</a>
-            <a href="theatre.html">The theatre</a>
-            <a href="Training.html">Training</a>
-            <a href="Gallery.html">Gallery</a>
-            <a href="Access.html">Access</a>
+            <a href="index.html">Accueil</a>
+            <a href="show.html">Spectacles</a>
+            <a href="theatre.html">Le théâtre</a>
+            <a href="Training.html">Formations</a>
+            <a href="Gallery.html">Galerie</a>
+            <a href="Access.html">Accès</a>
             <a href="Contact.html">Contact</a>
         </nav>
     </header>
@@ -36,13 +35,15 @@
     <div class="theatre-section">
 
         <h1 class="main-title">Le théâtre</h1>
-        
+
         <div class="content">
             <!-- LEFT TEXT -->
             <div class="text">
                 <h2>LA SCENE PARISIENNE</h2>
                 <p>
-                    Deux salles, flambant neuves, au 34 rue Richer, accolées aux Folies Bergère au cœur du 9ème arrondissement et à deux pas des Grands Boulevards où bouillonnent l’esprit de comédie et l’énergie du divertissement, dans le confort de leurs fauteuils rouges
+                    Deux salles, flambant neuves, au 34 rue Richer, accolées aux Folies Bergère au cœur du 9ème
+                    arrondissement et à deux pas des Grands Boulevards où bouillonnent l’esprit de comédie et l’énergie
+                    du divertissement, dans le confort de leurs fauteuils rouges
                     de plaisir, d’où l’on voit bien de partout, et tout ce qui se passe sur leurs larges scènes.
                 </p>
 
@@ -62,20 +63,26 @@
             height: 500px;
             object-fit: cover;
         }
+
         @media (max-width: 1024px) {
             .theatre-section {
                 padding: 40px 20px;
             }
+
             .content {
                 flex-direction: column !important;
                 text-align: center;
             }
-            .text, .image {
+
+            .text,
+            .image {
                 max-width: 100%;
             }
+
             .main-title {
                 font-size: 36px;
             }
+
             .top-banner-img img {
                 height: 300px;
             }
@@ -96,7 +103,8 @@
             <div class="textbox4">
                 <h1>LA PROGRAMMATION</h1>
                 <p>
-                    Qu’on aime rire aux éclats ou s’émouvoir jusqu’aux larmes, que l’on penche pour le drame ou la comédie...
+                    Qu’on aime rire aux éclats ou s’émouvoir jusqu’aux larmes, que l’on penche pour le drame ou la
+                    comédie...
                 </p>
 
                 <p>
@@ -116,7 +124,8 @@
             <div class="subscribe4">
                 <h2>S'abonner</h2>
                 <p>
-                    Nouveautés, interviews, premières, offres exclusives... Découvrez encore plus en scannant ce QR code ➡️
+                    Nouveautés, interviews, premières, offres exclusives... Découvrez encore plus en scannant ce QR code
+                    ➡️
                 </p>
             </div>
 
@@ -137,7 +146,8 @@
 
             <!-- LEFT -->
             <div class="footer-col">
-                <div class="logo"><img src="assets/images/logo.webp" alt="image" style="width: 160px; height: 100px;"></div>
+                <div class="logo"><img src="assets/images/logo.webp" alt="image" style="width: 160px; height: 100px;">
+                </div>
 
                 <p>La Scene Parisienne ©Tous droits réservés</p>
                 <p>Mentions légales</p>
@@ -173,7 +183,9 @@
         <h3>THÉÂTRES ET PRODUCTEURS ASSOCIÉS</h3>
 
         <p>
-            The Théâtre de la Scène Parisienne is a member of Théâtres et Producteurs Associés, and is therefore part of a strict professional ethic: respect for the rights of authors and performing artists, respect for the general conditions of welcoming the public,
+            The Théâtre de la Scène Parisienne is a member of Théâtres et Producteurs Associés, and is therefore part of
+            a strict professional ethic: respect for the rights of authors and performing artists, respect for the
+            general conditions of welcoming the public,
             preservation of a leading architectural and cultural heritage.
         </p>
 
@@ -192,7 +204,7 @@
     <script>
         // <![CDATA[  <-- For SVG support
         if ('WebSocket' in window) {
-            (function() {
+            (function () {
                 function refreshCSS() {
                     var sheets = [].slice.call(document.getElementsByTagName("link"));
                     var head = document.getElementsByTagName("head")[0];
@@ -211,7 +223,7 @@
                 var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
                 var address = protocol + window.location.host + window.location.pathname + '/ws';
                 var socket = new WebSocket(address);
-                socket.onmessage = function(msg) {
+                socket.onmessage = function (msg) {
                     if (msg.data == 'reload') window.location.reload();
                     else if (msg.data == 'refreshcss') refreshCSS();
                 };
