@@ -484,28 +484,32 @@
                 from.setHours(0, 0, 0, 0);
                 if (dates.length > 1) {
                     to = new Date(dates[1]);
+                    to.setHours(23, 59, 59, 999);
                 } else {
+                    // If only one date is selected, treat it as that single day
                     to = new Date(dates[0]);
+                    to.setHours(23, 59, 59, 999);
                 }
-                to.setHours(0, 0, 0, 0);
             }
             const type = document.getElementById('typeFilter').value;
 
-            // If a date is selected, we search globally, otherwise we use the active tab
-            let base = (from || to) ? [...allShows] : getFilteredByTab();
+            // If a date is selected, we search globally across all shows.
+            // Otherwise, we respect the current tab (affiche/prochainement/archive).
+            let base = (from && to) ? [...allShows] : getFilteredByTab();
 
-            if (from || to) {
+            if (from && to) {
                 base = base.filter(s => {
                     const r = getRange(s);
-                    if (!r.start) return false;
+                    if (!r.start || !r.end) return false;
 
-                    // Normalize show start date for exact comparison
                     const showStart = new Date(r.start);
                     showStart.setHours(0, 0, 0, 0);
+                    const showEnd = new Date(r.end);
+                    showEnd.setHours(23, 59, 59, 999);
 
-                    // EXACT START MATCH: The show must start on the exact 'from' date selected.
-                    // This satisfies the "exact" requirement for specific show selection.
-                    return (showStart.getTime() === from.getTime());
+                    // Strictly Within: Show must start and end within the selected range
+                    // "menstinn pannatha date vara kudathu" (Dates not mentioned shouldn't come)
+                    return (showStart >= from && showEnd <= to);
                 });
             }
 
@@ -515,6 +519,11 @@
 
             filteredShows = base;
             renderPage(1);
+
+            // If a filter is applied, clear the active status of tabs to avoid confusion
+            if ((from && to) || type) {
+                document.querySelectorAll('.filter-tabs button').forEach(b => b.classList.remove('active'));
+            }
         }
 
         function showAll() {
