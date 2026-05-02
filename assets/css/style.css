@@ -11,29 +11,30 @@
 
    /* HEADER */
 
-   .header {
-       background: #000;
-       color: #fff;
-       display: flex;
-       justify-content: space-between;
-       padding: 30px 80px;
-       align-items: center;
-       position: sticky;
-       top: 0;
-       z-index: 1000;
-   }
+    .header {
+        background: #000;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 80px;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        gap: 30px;
+    }
 
-   .logo1 img {
-       width: 250px;
-       height: auto;
-       margin-left: 250px;
-   }
+    .logo1 img {
+        width: 250px;
+        height: auto;
+        margin-left: 20px;
+    }
 
-   .nav {
-       display: flex;
-       margin-right: 250px;
-       gap: 35px;
-   }
+    .nav {
+        display: flex;
+        margin-right: 20px;
+        gap: 35px;
+    }
 
    .nav a {
        color: #fff;
@@ -1001,5 +1002,69 @@
 
     .banner-wrapper {
         width: 100% !important;
+    }
+}
+
+/* Tablet Fixes to properly align logo and navigation */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header {
+        padding: 15px 40px !important;
+        justify-content: space-between !important;
+        flex-wrap: nowrap !important;
+    }
+
+    .logo1 img {
+        margin-left: 0 !important;
+        width: 180px !important;
+    }
+
+    .nav {
+        margin-right: 0 !important;
+        margin-top: 0 !important;
+        gap: 15px !important;
+    }
+
+    .nav a {
+        margin-left: 0 !important;
+        font-size: 13px !important;
+    }
+}
+
+/* Additional Tablet Banner Fixes */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .banner img {
+        object-fit: cover !important;
+        height: 450px !important;
+        width: 100% !important;
+    }
+}
+
+/* Corrected Tablet Banner Fixes to prevent cutting */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .banner img {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 350px !important;
+        max-height: 550px !important;
+        object-fit: cover !important;
+        aspect-ratio: 16 / 7 !important;
+        background-color: #000 !important;
+    }
+}
+
+/* Final Banner Fix: Use object-fit: contain to ensure NO images are cut off */
+@media (max-width: 1200px) {
+    .banner img {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 250px !important;
+        max-height: 600px !important;
+        object-fit: contain !important;
+        background-color: #000 !important;
+        aspect-ratio: auto !important;
+    }
+    
+    .banner-container {
+        background-color: #000 !important;
     }
 }
