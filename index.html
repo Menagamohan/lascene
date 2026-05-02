@@ -15,7 +15,7 @@
     <!-- HEADER -->
     <header class="header">
         <div class="logo1"><img src="assets/images/logo.webp" alt="" style="width: 130px; height: 70px;"></div>
-        <nav class="nav">
+        <nav class="nav" id="navMenu">
             <a href="index.html" class="active">Accueil</a>
             <a href="show.html">Spectacles</a>
             <a href="theatre.html">Le théâtre</a>
@@ -24,6 +24,11 @@
             <a href="Access.html">Accès</a>
             <a href="Contact.html">Contact</a>
         </nav>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
 
     <!-- HERO SLIDER -->
@@ -917,6 +922,11 @@ Alors il en parle, il en rit, et parfois même…`
         /* REDIRECT */
         function openPage(index) {
             window.location.href = "spectacles.html?slide=" + index;
+        }
+
+        function toggleMenu() {
+            const nav = document.getElementById("navMenu");
+            nav.classList.toggle("active");
         }
     </script>
 
