@@ -106,3 +106,9 @@ setInterval(() => {
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+function toggleMenu() {
+    const nav = document.getElementById("navMenu");
+    if (nav) {
+        nav.classList.toggle("active");
+    }
+}
